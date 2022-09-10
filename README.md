@@ -14,7 +14,6 @@ En este repositorio se econtraran trabajos realizados durante este cuatrimestre 
 Will be made through of Visual Studio Code
 
 
-<img src="https://github.com/UP210170/UP210170_CPP/blob/main/imagenes/vscode.png" alt="Logo" width="100px" align="left">
 
 ### Main Structure
 * U1 --- Unit 1 "Programming introduction"
@@ -22,6 +21,7 @@ Will be made through of Visual Studio Code
 * U3 --- Unit 3 "Functions"
 * U4 --- Unit 4 "Files and arrays"
 
+<img src="https://github.com/UP210170/UP210170_CPP/blob/main/imagenes/vscode.png" alt="Logo" width="100px" align="left">
 
 
 
