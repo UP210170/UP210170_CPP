@@ -8,8 +8,7 @@ I belong to University Polytechnic of Aguascalientes
 
 ISCO3B
 
-In this repository they will meet work done during this  ISC03 all content 100% personal fact 
-En este repositorio se econtraran trabajos realizados durante este cuatrimestre ISC03 todo el contenido 100% hecho personal.
+In this repository they will meet work done during this four-month period ISC03 all content 100% personal fact 
 
 Will be made through of Visual Studio Code
 
