@@ -20,7 +20,6 @@ Will be made through of Visual Studio Code
 * U2 --- Unit 2 "Control structures and cycles"
 * U3 --- Unit 3 "Functions"
 * U4 --- Unit 4 "Files and arrays"
-
 <img src="https://github.com/UP210170/UP210170_CPP/blob/main/imagenes/vscode.png" alt="Logo" width="100px" align="left">
 
 
