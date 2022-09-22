@@ -38,7 +38,7 @@ int main (){
     cout << "Ingresa tu renta anual: \n";
     cin >> renta;
     
-   
+    if(renta > 0){
         if (renta < 10000){
             descuento5 = renta*.05;
             impuesto1 = (descuento5/renta)*100;
@@ -73,9 +73,9 @@ int main (){
             cout << "* Su impuesto es del: " << impuesto1 << "%" << endl;
             cout << "* Debe pagar: " << "$" << descuento45 << endl;
         }
-
-
-    
-
+    }else {
+        cout << "El dato que ingreso es incorrecto" << endl;
+    }
+        
     return 0;
 }
