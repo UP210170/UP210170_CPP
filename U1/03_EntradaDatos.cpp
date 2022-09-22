@@ -45,47 +45,14 @@ int main(){
     cout << "Ingresa un dato de tipo char: \n";
     cin >> caracter;
     cout << "El dato ingresado es: " << caracter << endl;
+
+    printf("===================");
     
   
-    printf("\n\nPrueba 2 con cout y printf\n\n");
-   
-    // PRUEBA 2 //// 
-
-    cout << "Texto" << endl;
-    cin >> numero;
-
-    cout << "El número guardado es: "<< numero << endl;
-
-
+    printf("Usando printf y scanf");
     printf("Dame un número: ");
     scanf("%d", &numero);
-    printf("La guardado es: %c", numero);
-
-    printf("\n\nPrueba 3 con cout y printf\n\n"); //USANDO PRINTF
-
-    printf("Ingresa un dato entero: \n");
-    scanf("%d", &entero);
-    printf("El guardado es: %d", entero);
-
-    printf("========================");
-
-    printf("Ingresa un dato tipo flotante: \n");
-    scanf("%f", &flotante);
-    printf("El guardo es: %f", flotante);
-
-    printf("======================");
-
-    printf("Ingresa un dato double: \n");
-    scanf("%lf", &grande);
-    printf("El guardado es: %lf", grande);
-
-    printf("=====================");
-
-    printf("Ingresa un dato char: \n");
-    scanf("%c", &caracter);
-    printf("El guardado es: %c", caracter);
-
-   
+    printf("La guardado es: %d", numero);
 
 
 return 0;
