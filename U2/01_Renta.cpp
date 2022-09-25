@@ -27,57 +27,64 @@ using namespace std;
 
 // Se usa float por que se realiza divisiones en el impuesto
 int main (){
-    float renta;
-    float descuento5;
-    float descuento15;
-    float descuento20;
-    float descuento30;
-    float descuento45;
-    float impuesto1;
+    float rent;
+    float descuent5;
+    float descuent15;
+    float descuent20;
+    float descuent30;
+    float descuent45;
+    float taxes1;
 
-    cout << "Ingresa tu renta anual: \n";
-    cin >> renta;
+    cout << "Enter your annual rent: \n";
+    cin >> rent;
     
-    if(renta > 0){
-        if (renta < 10000){
-            descuento5 = renta*.05;
-            impuesto1 = (descuento5/renta)*100;
-            cout << "\n" << endl;
-            cout << "Tus datos son: " << endl;
-            cout << "* Tu sueldo anual es: " << renta << endl;
-            cout << "* Su impuesto es del: " << impuesto1 << "%" << endl;
-            cout << "* Debe pagar: " << "$" << descuento5 << endl; 
+    if(rent > 0){
+        if (rent < 10000){
+            descuent5 = rent*.05;
+            taxes1 = (descuent5/rent)*100;
+            cout << "Your data is: " << endl;
+            cout << "* Your annual rent is: " << rent << endl;
+            cout << "* Your tax is: " << taxes1 << "%" << endl;
+            cout << "* Must pay: " << "$" << descuent5 << endl; 
         }
 
-        if(renta >= 10000 & renta < 20000){
-            descuento15 = renta*.15;
-            impuesto1 = (descuento15/renta)*100;
-            cout << "* Su impuesto es del: " << impuesto1 << "%" << endl;
-            cout << "* Debe pagar: " << "$" << descuento15 << endl;
+        if(rent >= 10000 & rent < 20000){
+            descuent15 = rent*.15;
+            taxes1 = (descuent15/rent)*100;
+            cout << "Your data is: " << endl;
+            cout << "* Your annual rent is: " << rent << endl;
+            cout << "* Your tax is: " << taxes1 << "%" << endl;
+            cout << "* Must pay: " << "$" << descuent15 << endl; 
         }
 
-        if(renta >= 20000 & renta < 35000){
-            descuento20 = renta*.20;
-            impuesto1 = (descuento20/renta)*100;
-            cout << "* Su impuesto es del: " << impuesto1 << "%" << endl;
-            cout << "* Debe pagar: " << "$" << descuento20 << endl;
+        if(rent >= 20000 & rent < 35000){
+            descuent20 = rent*.20;
+            taxes1 = (descuent20/rent)*100;
+            cout << "Your data is: " << endl;
+            cout << "* Your annual rent is: " << rent << endl;
+            cout << "* Your tax is: " << taxes1 << "%" << endl;
+            cout << "* Must pay: " << "$" << descuent20 << endl; 
         }
 
-        if(renta >= 35000 & renta <= 60000){
-            descuento30 = renta*.30;
-            impuesto1 = (descuento30/renta)*100;
-            cout << "* Su impuesto es del: " << impuesto1 << "%" << endl;
-            cout << "* Debe pagar: " << "$" << descuento30 << endl;
+        if(rent >= 35000 & rent <= 60000){
+            descuent30 = rent*.30;
+            taxes1 = (descuent30/rent)*100;
+            cout << "Your data is: " << endl;
+            cout << "* Your annual rent is: " << rent << endl;
+            cout << "* Your tax is: " << taxes1 << "%" << endl;
+            cout << "* Must pay: " << "$" << descuent30 << endl; 
         }
 
-        if(renta > 60000) {
-            descuento45 = renta*.05;
-            impuesto1 = (descuento45/renta)*100;
-            cout << "* Su impuesto es del: " << impuesto1 << "%" << endl;
-            cout << "* Debe pagar: " << "$" << descuento45 << endl;
+        if(rent > 60000) {
+            descuent45 = rent*.05;
+            taxes1 = (descuent45/rent)*100;
+            cout << "Your data is: " << endl;
+            cout << "* Your annual rent is: " << rent << endl;
+            cout << "* Your tax is: " << taxes1 << "%" << endl;
+            cout << "* Must pay: " << "$" << descuent45 << endl; 
         }
     }else {
-        cout << "El dato que ingreso es incorrecto" << endl;
+        cout << "The data you entered is incorrect" << endl;
     }
         
     return 0;
