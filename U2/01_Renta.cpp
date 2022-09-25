@@ -77,7 +77,7 @@ int main (){
         }
 
         if(rent >= 60000) {
-            descuent45 = rent*.05;
+            descuent45 = rent*.45;
             taxes1 = (descuent45/rent)*100;
             cout << "Your data is: " << endl;
             cout << "* Your annual rent is: " << rent << endl;
