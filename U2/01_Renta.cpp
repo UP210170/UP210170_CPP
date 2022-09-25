@@ -34,7 +34,8 @@ int main (){
     float descuent30;
     float descuent45;
     float taxes1;
-
+    
+    //request for annual rent
     cout << "Enter your annual rent: \n";
     cin >> rent;
     
@@ -66,7 +67,7 @@ int main (){
             cout << "* Must pay: " << "$" << descuent20 << endl; 
         }
 
-        if(rent >= 35000 & rent <= 60000){
+        if(rent >= 35000 & rent < 60000){
             descuent30 = rent*.30;
             taxes1 = (descuent30/rent)*100;
             cout << "Your data is: " << endl;
@@ -75,7 +76,7 @@ int main (){
             cout << "* Must pay: " << "$" << descuent30 << endl; 
         }
 
-        if(rent > 60000) {
+        if(rent >= 60000) {
             descuent45 = rent*.05;
             taxes1 = (descuent45/rent)*100;
             cout << "Your data is: " << endl;
