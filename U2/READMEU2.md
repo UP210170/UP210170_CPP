@@ -64,6 +64,7 @@
 
 ## Screen shots
 ### - Rent < $10,000
+<img src="[UP210052_CPP/../../imagenes/Img_01.png](https://github.com/UP210170/UP210170_CPP/blob/main/imagenes/5%25.png)" align="center" height="150" width="700"/>
 ### - Rent >= $10,000 and Rent < $20,000
 ### - Rent >= $20,000 and Rent < $35,000
 ### - Rent >= $35,000 and Rent < $60,000
