@@ -43,7 +43,7 @@
         }
 
         if(rent > 60000) {
-            descuent45 = rent*.05;
+            descuent45 = rent*.45;
             taxes1 = (descuent45/rent)*100;
             cout << "Your data is: " << endl;
             cout << "* Your annual rent is: " << rent << endl;
@@ -65,7 +65,15 @@
 ## Screen shots
 ### - Rent < $10,000
 <img src="https://github.com/UP210170/UP210170_CPP/blob/main/imagenes/5%25.png" alt="5%" align="center" height="150" width="700">
+
 ### - Rent >= $10,000 and Rent < $20,000
+<img src="https://github.com/UP210170/UP210170_CPP/blob/main/imagenes/15%25.png" alt="15%" align="center" height="150" width="700">
+
 ### - Rent >= $20,000 and Rent < $35,000
+<img src="https://github.com/UP210170/UP210170_CPP/blob/main/imagenes/20%25.png" alt="20%" align="center" height="150" width="700">
+
 ### - Rent >= $35,000 and Rent < $60,000
+<img src="https://github.com/UP210170/UP210170_CPP/blob/main/imagenes/30%25.png" alt="30%" align="center" height="150" width="700">
+
 ### - Rent >= $60,000 
+<img src="https://github.com/UP210170/UP210170_CPP/blob/main/imagenes/45%25.png" alt="45%" align="center" height="150" width="700">
