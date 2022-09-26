@@ -1,9 +1,9 @@
 /*
 Date: 12/09/2022 
-Date last modification: 12/09/2022
+Date last modification: 25/09/2022
 Author: Oscar Noel Nuño Verdín
 Email: up210170@alumnos.upa.edu.mx
-Description: First exercise Unit 2 
+Description: Exercise Unit 2 
 */
 
 
