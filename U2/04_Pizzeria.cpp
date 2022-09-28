@@ -27,35 +27,34 @@ using namespace std;
 int main (){
     int pizza;
     int ingrediente;
-    string ingre = "Pimiento" "Tofu";
-    string ingreno = "Peperoni" "Jamón" "Salmón";
-    string pizzav = "Vegetariana";
-    string pizzan = "No Vegetariana";
+    string ingre = "Pimiento" "Tofu" "Peperoni" "Jamón" "Salmón";
+    string pizzav = "Vegetarian" "No Vegetarian";
     char nombre [20];
 
-    cout << "BIENVENIDOS A PIZZAS ROBERT " << endl;
+    cout << " WELCOME TO PIZZAS ROBERT " << endl;
     cout << "------------------------------------" << endl;
 
     //Input
-    cout << "\nSea usted bienvenido, Cuál es su nombre?" << endl;
+    cout << "\nWelcome, What her name?" << endl;
     cin >> nombre;
 
 
-    cout << "\n\n Menú de opciones" << endl;
-    cout << "1. Vegetariana" << endl;
-    cout << "2. No Vegetariana" << endl;
+    cout << "\n\n Option Menu" << endl;
+    cout << "1. Vegetarian" << endl;
+    cout << "2. No Vegetarian" << endl;
 
-    cout << "\n\nIngrese una opcion de pizza: " << endl;
+    cout << "\n\nEnter a pizza option: " << endl;
     cin >> pizza;
     
     //Processing 
     if((pizza == 1) || (pizza == 2)){
         if (pizza == 1){
-        cout << "\nIngredientes de una pizza vegetariana, que incluye (Mozarella y Tomate) Elige uno: " << endl;
+        pizzav = "Vegetarian";
+        cout << "\nIngredients of a vegetarian pizza, it includes (Mozarella y Tomate) choose one: " << endl;
         cout << "1. Pimiento" << endl;
         cout << "2. Tofu" << endl;
 
-        cout << "\nIngrediente que deseas agregar:" << endl;
+        cout << "\nIngredient you want to add:" << endl;
         cin >> ingrediente;
 
         if(ingrediente == 1){
@@ -65,41 +64,41 @@ int main (){
             ingre = "Tofu";
         }
 
-        //Output
-        cout << "\nEstimado cliente " << nombre << endl;
-        cout << "Su orden es: " << endl;
-        cout << "Una pizza " << pizzav << endl;
-        cout << "Con estos ingredientes Mozarella, Tomate y " << ingre << endl;
+ 
+      
        }
 
 
        if(pizza == 2){
-        cout << "\nIngredientes de una pizza no vegetariana, que incluye (Mozarella y Tomate) Elige uno: " << endl;
+        pizzav = "No Vegetarian";
+        cout << "\nIngredients of a no vegetarian pizza, it includes (Mozarella y Tomate) choose one: " << endl;
         cout << "1. Peperoni" << endl;
         cout << "2. Jamón" << endl;
         cout << "3. Salmón" << endl;
 
-        cout << "\nIngrediente que deseas agregar:" << endl;
+        cout << "\nIngredient you want to add:" << endl;
         cin >> ingrediente;
         
         if(ingrediente == 1){
-            ingreno = "Peperoni";
+            ingre = "Peperoni";
         }
         else if(ingrediente == 2){
-            ingreno = "Jamón";
+            ingre = "Jamón";
         }
         else if(ingrediente == 3){
-            ingreno = "Salmón";
+            ingre = "Salmón";
         }
  
-        //Output
-        cout << "\nEstimado cliente " << nombre << endl;
-        cout << "Su orden es: " << endl;
-        cout << "Una pizza " << pizzan << endl;
-        cout << "Con estos ingredientes Mozarella, Tomate y " << ingreno << endl;
-
        }
-       cout << "\n¡GRACIAS POR SU PREFERENCIA!" << endl;
+
+        //Output
+       cout << "\nDear Customer " << nombre << endl;
+       cout << "Your order is: " << endl;
+       cout << "A pizza of " << pizzav << endl;
+       cout << "With these ingredients Mozarella, Tomate y " << ingre << endl;
+       cout << "\n¡Thanks for your preference!" << endl;
+
+
     }else {
         cout << "El valor ingresado no se encontro" << endl;
     }

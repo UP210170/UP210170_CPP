@@ -36,7 +36,7 @@ int main(){
     double sueldo1;
 
     //request his annual score 
-    cout << "Ingresa tu puntuación del año: " << endl;
+    cout << "Enter your score for the year: " << endl;
     cin >> puntuacion;
 
     //Operation for salary 
@@ -48,21 +48,21 @@ int main(){
 
         //if de acorde al nivel ingresado
         if(puntuacion == 0.0){
-            cout << "Tu nivel de desempeño es Inaceptable" << endl;
+            cout << "Your level of performance is Unacceptable" << endl;
         }
         else if(puntuacion == 0.4){
-            cout << "Tu nivel de desempeño es Aceptable" << endl;
+            cout << "Your level of performance is Acceptable" << endl;
         }
         else if(puntuacion >= 0.6){
-            cout << "Tu nivel de desempeño es Meritorio" << endl;
+            cout << "Your level of performance is Meritorious" << endl;
         }
 
         //Output
-        cout << "Tu dinero final es: " << "$" << sueldo1 << endl;
+        cout << "Your final money is: " << "$" << sueldo1 << endl;
     }
         
     }else{
-        cout << "El valor que ingreso es incorrecto" << endl;
+        cout << "The value your entered is incorrect" << endl;
     }
         
     return 0;
