@@ -147,3 +147,11 @@ cin >> rent;
 ### - Score > 1
 <img src="https://github.com/UP210170/UP210170_CPP/blob/main/imagenes/1.png" alt="5%" align="center" height="150" width="700">
 
+
+# Exercise 3: Ask the age and show the entry price (Games room)
+## Preprocessor directives (c++)
+```c++
+#include <iostream>
+#include <stdio.h>
+```    
+
