@@ -23,7 +23,7 @@ int main()
     int precio;
 
     // Input
-    cout << "Ingresa tu edad: " << endl;
+    cout << "Enter your age: " << endl;
     cin >> edad;
 
     // Processing
@@ -46,11 +46,11 @@ int main()
 
 
             //Output
-            cout << "El precio a pagar es: "
+            cout << "The price to pay is: "
                  << "$" << precio << endl;
         }
     }else{
-        cout << "La edad ingresada es incorrecta" << endl;
+        cout << "The age entered is incorrect" << endl;
     }
 
 

@@ -36,6 +36,7 @@ int main (){
     cout << "BIENVENIDOS A PIZZAS ROBERT " << endl;
     cout << "------------------------------------" << endl;
 
+    //Input
     cout << "\nSea usted bienvenido, Cuál es su nombre?" << endl;
     cin >> nombre;
 
@@ -47,6 +48,7 @@ int main (){
     cout << "\n\nIngrese una opcion de pizza: " << endl;
     cin >> pizza;
     
+    //Processing 
     if((pizza == 1) || (pizza == 2)){
         if (pizza == 1){
         cout << "\nIngredientes de una pizza vegetariana, que incluye (Mozarella y Tomate) Elige uno: " << endl;
@@ -63,6 +65,7 @@ int main (){
             ingre = "Tofu";
         }
 
+        //Output
         cout << "\nEstimado cliente " << nombre << endl;
         cout << "Su orden es: " << endl;
         cout << "Una pizza " << pizzav << endl;
@@ -88,7 +91,8 @@ int main (){
         else if(ingrediente == 3){
             ingreno = "Salmón";
         }
-
+ 
+        //Output
         cout << "\nEstimado cliente " << nombre << endl;
         cout << "Su orden es: " << endl;
         cout << "Una pizza " << pizzan << endl;

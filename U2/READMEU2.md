@@ -8,8 +8,8 @@
 ## Input (c++)
 ```c++
 //request for annual rent
-cout << "Enter your annual rent: \n";
-cin >> rent;
+   cout << "Enter your annual rent: \n";
+   cin >> rent;
 ```
 
 ## Processing (c++)
@@ -154,4 +154,60 @@ cin >> rent;
 #include <iostream>
 #include <stdio.h>
 ```    
+## Input (c++)
+```c++
+  // Input
+    cout << "Enter your age: " << endl;
+    cin >> edad;
+```
 
+## Processing (c++)
+```c++
+if (edad > 1)
+    {
+        if ((edad < 4) || (edad >= 4 && edad <= 18) || (edad > 18))
+        {
+            if (edad < 4)
+            {
+                precio = 0;
+            }
+            else if (edad >= 4 && edad <= 18)
+            {
+                precio = 5;
+            }
+            else if (edad > 18)
+            {
+                precio = 10;
+            }
+        }
+    }else{
+        cout << "The age entered is incorrect" << endl;
+    }
+```
+## Output (c++)
+```c++
+//Output
+        cout << "The price to pay is: "
+            << "$" << precio << endl;
+```
+## Explanation
+1. Ask the client for his age 
+2. Check if the entered value is correct
+3. If the client's age is minor than 4, the admission price is $0 (FREE)
+4. If the client's age is greater or equal than 4 and minor o equal than 18 the admission price is $5
+5. If the client's age is greater than 18, the admission price is $10
+6. If the age is minor than 1, you receive an alert
+7. Printf the admission price 
+
+## Screen shots
+### - Age < 4
+<img src="https://github.com/UP210170/UP210170_CPP/blob/main/imagenes/menor 4.png" alt="5%" align="center" height="150" width="700">
+
+### - Age >= 4 or Age <= 18
+<img src="https://github.com/UP210170/UP210170_CPP/blob/main/imagenes/4 y 18.png" alt="5%" align="center" height="150" width="700">
+
+### - Age > 18
+<img src="https://github.com/UP210170/UP210170_CPP/blob/main/imagenes/mas 18.png" alt="5%" align="center" height="150" width="700">
+
+### - Age < 1
+<img src="https://github.com/UP210170/UP210170_CPP/blob/main/imagenes/0.png" alt="5%" align="center" height="150" width="700">
