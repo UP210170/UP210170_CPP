@@ -28,62 +28,47 @@ using namespace std;
 // Se usa float por que se realiza divisiones en el impuesto
 int main (){
     float rent;
-    float descuent5;
-    float descuent15;
-    float descuent20;
-    float descuent30;
-    float descuent45;
+    float descuento;
     float taxes1;
     
     //request for annual rent
     cout << "Enter your annual rent: \n";
     cin >> rent;
+
     
+
+    //Processing 
     if(rent > 0){
+        if((rent < 10000) || (rent >=10000 & rent < 20000) || (rent >= 20000 & rent < 35000) || (rent >= 35000 & rent < 60000) || (rent >= 60000)){
         if (rent < 10000){
-            descuent5 = rent*.05;
-            taxes1 = (descuent5/rent)*100;
-            cout << "Your data is: " << endl;
-            cout << "* Your annual rent is: " << rent << endl;
-            cout << "* Your tax is: " << taxes1 << "%" << endl;
-            cout << "* Must pay: " << "$" << descuent5 << endl; 
+            descuento = rent*.05;
         }
 
         if(rent >= 10000 & rent < 20000){
-            descuent15 = rent*.15;
-            taxes1 = (descuent15/rent)*100;
-            cout << "Your data is: " << endl;
-            cout << "* Your annual rent is: " << rent << endl;
-            cout << "* Your tax is: " << taxes1 << "%" << endl;
-            cout << "* Must pay: " << "$" << descuent15 << endl; 
+            descuento = rent*.15;
         }
 
         if(rent >= 20000 & rent < 35000){
-            descuent20 = rent*.20;
-            taxes1 = (descuent20/rent)*100;
-            cout << "Your data is: " << endl;
-            cout << "* Your annual rent is: " << rent << endl;
-            cout << "* Your tax is: " << taxes1 << "%" << endl;
-            cout << "* Must pay: " << "$" << descuent20 << endl; 
+            descuento = rent*.20;
         }
 
         if(rent >= 35000 & rent < 60000){
-            descuent30 = rent*.30;
-            taxes1 = (descuent30/rent)*100;
-            cout << "Your data is: " << endl;
-            cout << "* Your annual rent is: " << rent << endl;
-            cout << "* Your tax is: " << taxes1 << "%" << endl;
-            cout << "* Must pay: " << "$" << descuent30 << endl; 
+            descuento = rent*.30;
         }
 
         if(rent >= 60000) {
-            descuent45 = rent*.45;
-            taxes1 = (descuent45/rent)*100;
-            cout << "Your data is: " << endl;
-            cout << "* Your annual rent is: " << rent << endl;
-            cout << "* Your tax is: " << taxes1 << "%" << endl;
-            cout << "* Must pay: " << "$" << descuent45 << endl; 
+            descuento = rent*.45;
         }
+        }
+
+        taxes1 = (descuento/rent)*100;
+        
+        //Data output
+        cout << "Your data is: " << endl;
+        cout << "* Your annual rent is: " << "$" << rent << endl;
+        cout << "* Your tax is: " << taxes1 << "%" << endl;
+        cout << "* Must pay: " << "$" << descuento << endl;
+
     }else {
         cout << "The data you entered is incorrect" << endl;
     }

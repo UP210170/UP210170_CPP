@@ -39,11 +39,10 @@ int main(){
     cout << "Ingresa tu puntuación del año: " << endl;
     cin >> puntuacion;
 
-    //Operación para obtener el sueldo
+    //Operation for salary 
     sueldo1 = puntuacion * 2400;
 
-    //If pirncipal para ver si el dato es correcto y entrar dentro de el 
-
+    //Processing
     if(puntuacion <= 1){
          if((puntuacion == 0.4) || (puntuacion >= 0.6) || (puntuacion == 0.0)){
 
@@ -58,7 +57,7 @@ int main(){
             cout << "Tu nivel de desempeño es Meritorio" << endl;
         }
 
-        //Mensaje del dinero final por su desempeño
+        //Output
         cout << "Tu dinero final es: " << "$" << sueldo1 << endl;
     }
         

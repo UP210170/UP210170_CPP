@@ -1,55 +1,56 @@
 # Exercise 1: A program that asks the user for his annual rent and exhibit the corresponding tax rate
-## Tax selection section (code c++)
+## Preprocessor directives (c++)
+```c++
+#include <iostream>
+#include <stdio.h>
+```
 
-    //request for annual rent
-    cout << "Enter your annual rent: \n";
-    cin >> rent;
-    
+## Input (c++)
+```c++
+//request for annual rent
+cout << "Enter your annual rent: \n";
+cin >> rent;
+```
+
+## Processing (c++)
+```c++
+    //Processing 
     if(rent > 0){
+        if((rent < 10000) || (rent >=10000 & rent < 20000) || (rent >= 20000 & rent < 35000) || (rent >= 35000 & rent < 60000) || (rent >= 60000)){
         if (rent < 10000){
-            descuent5 = rent*.05;
-            taxes1 = (descuent5/rent)*100;
-            cout << "Your data is: " << endl;
-            cout << "* Your annual rent is: " << rent << endl;
-            cout << "* Your tax is: " << taxes1 << "%" << endl;
-            cout << "* Must pay: " << "$" << descuent5 << endl; 
+            descuento = rent*.05;
         }
 
         if(rent >= 10000 & rent < 20000){
-            descuent15 = rent*.15;
-            taxes1 = (descuent15/rent)*100;
-            cout << "Your data is: " << endl;
-            cout << "* Your annual rent is: " << rent << endl;
-            cout << "* Your tax is: " << taxes1 << "%" << endl;
-            cout << "* Must pay: " << "$" << descuent15 << endl; 
+            descuento = rent*.15;
         }
 
         if(rent >= 20000 & rent < 35000){
-            descuent20 = rent*.20;
-            taxes1 = (descuent20/rent)*100;
-            cout << "Your data is: " << endl;
-            cout << "* Your annual rent is: " << rent << endl;
-            cout << "* Your tax is: " << taxes1 << "%" << endl;
-            cout << "* Must pay: " << "$" << descuent20 << endl; 
+            descuento = rent*.20;
         }
 
-        if(rent >= 35000 & rent <= 60000){
-            descuent30 = rent*.30;
-            taxes1 = (descuent30/rent)*100;
-            cout << "Your data is: " << endl;
-            cout << "* Your annual rent is: " << rent << endl;
-            cout << "* Your tax is: " << taxes1 << "%" << endl;
-            cout << "* Must pay: " << "$" << descuent30 << endl; 
+        if(rent >= 35000 & rent < 60000){
+            descuento = rent*.30;
         }
 
-        if(rent > 60000) {
-            descuent45 = rent*.45;
-            taxes1 = (descuent45/rent)*100;
-            cout << "Your data is: " << endl;
-            cout << "* Your annual rent is: " << rent << endl;
-            cout << "* Your tax is: " << taxes1 << "%" << endl;
-            cout << "* Must pay: " << "$" << descuent45 << endl; 
+        if(rent >= 60000) {
+            descuento = rent*.45;
         }
+        }
+    }else {
+        cout << "The data you entered is incorrect" << endl;
+    }
+```
+
+## Output
+```c++
+//Data output
+    cout << "Your data is: " << endl;
+    cout << "* Your annual rent is: " << "$" << rent << endl;
+    cout << "* Your tax is: " << taxes1 << "%" << endl;
+    cout << "* Must pay: " << "$" << descuento << endl;
+```
+
 
 ## Explanation
 1. Ask the user for his annual rent
@@ -80,16 +81,22 @@
 
 
 # Exercise 2: A program that asks the user for his employment score and show his final salary
-## Score selection section (code c++)
+## Preprocessor directives (c++)
+```c++
+#include <iostream>
+#include <stdio.h>
+```    
+
+## Input (c++)
+```c++
     //request his annual score 
     cout << "Ingresa tu puntuación del año: " << endl;
     cin >> puntuacion;
+```
 
-    //Operación para obtener el sueldo
-    sueldo1 = puntuacion * 2400;
-
-    //If pirncipal para ver si el dato es correcto y entrar dentro de el 
-
+## Processing (c++)
+```c++
+    //Processing
     if(puntuacion <= 1){
          if((puntuacion == 0.4) || (puntuacion >= 0.6) || (puntuacion == 0.0)){
 
@@ -103,14 +110,18 @@
         else if(puntuacion >= 0.6){
             cout << "Tu nivel de desempeño es Meritorio" << endl;
         }
-
-        //Mensaje del dinero final por su desempeño
-        cout << "Tu dinero final es: " << "$" << sueldo1 << endl;
     }
         
     }else{
         cout << "El valor que ingreso es incorrecto" << endl;
     }
+```
+
+## Output
+```c++
+    //Output
+    cout << "Tu dinero final es: " << "$" << sueldo1 << endl;
+```
 
 ## Explanation 
 1. Ask the user for his annual score in the company
