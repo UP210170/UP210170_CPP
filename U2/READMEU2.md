@@ -307,7 +307,7 @@ if (edad > 1)
 
 ## Screen shots
 ### - Pizza Vegetarian with Pimiento
-<img src="https://github.com/UP210170/UP210170_CPP/blob/main/imagenes/Pimiento.png" alt="5%" align="center" height="150" width="700">
+<img src="https://github.com/UP210170/UP210170_CPP/blob/main/imagenes/Pimiento.png" alt="5%" align="center">
 
 ### - Pizza Vegetarian with Tofu
 <img src="https://github.com/UP210170/UP210170_CPP/blob/main/imagenes/4 y 18.png" alt="5%" align="center" height="150" width="700">
