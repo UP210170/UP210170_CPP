@@ -310,18 +310,18 @@ if (edad > 1)
 <img src="https://github.com/UP210170/UP210170_CPP/blob/main/imagenes/Pimiento.png" alt="5%" align="center">
 
 ### - Pizza Vegetarian with Tofu
-<img src="https://github.com/UP210170/UP210170_CPP/blob/main/imagenes/4 y 18.png" alt="5%" align="center" height="150" width="700">
+<img src="https://github.com/UP210170/UP210170_CPP/blob/main/imagenes/Tofu.png" alt="5%" align="center">
 
 ### - Pizza No vegetarian with Peperoni
-<img src="https://github.com/UP210170/UP210170_CPP/blob/main/imagenes/mas 18.png" alt="5%" align="center" height="150" width="700">
+<img src="https://github.com/UP210170/UP210170_CPP/blob/main/imagenes/Peperoni.png" alt="5%" align="center">
 
 ### - Pizza No vegetarian with Jamón
-<img src="https://github.com/UP210170/UP210170_CPP/blob/main/imagenes/0.png" alt="5%" align="center" height="150" width="700">
+<img src="https://github.com/UP210170/UP210170_CPP/blob/main/imagenes/Jamon.png" alt="5%" align="center">
 
 ### - Pizza No vegetarian with Salmón
-<img src="https://github.com/UP210170/UP210170_CPP/blob/main/imagenes/mas 18.png" alt="5%" align="center" height="150" width="700">
+<img src="https://github.com/UP210170/UP210170_CPP/blob/main/imagenes/Salmon.png" alt="5%" align="center">
 
 ### - Invalid Number
-<img src="https://github.com/UP210170/UP210170_CPP/blob/main/imagenes/0.png" alt="5%" align="center" height="150" width="700">
+<img src="https://github.com/UP210170/UP210170_CPP/blob/main/imagenes/NO.png" alt="5%" align="center">
 
 
