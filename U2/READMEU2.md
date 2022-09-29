@@ -237,8 +237,13 @@ if (edad > 1)
 
 ## Processing (c++)
 ```c++
+<<<<<<< HEAD
      // Processing
     if ((pizza == 1) || (pizza == 2))
+=======
+    //Processing 
+if ((pizza == 1) || (pizza == 2))
+>>>>>>> 7b5b79575d0c6cfa1b31f64e33ddfac87100f287
     {
         if (pizza == 1)
         {
@@ -252,13 +257,21 @@ if (edad > 1)
 
             if (ingrediente == 1)
             {
+<<<<<<< HEAD
                 ingre = "Pepper";
+=======
+                ingre = "Pimiento";
+>>>>>>> 7b5b79575d0c6cfa1b31f64e33ddfac87100f287
             }
             else if (ingrediente == 2)
             {
                 ingre = "Tofu";
             }else{
+<<<<<<< HEAD
                 cout << "Este igrediente no existe" << endl;
+=======
+                cout << "Este ingrediente no existe" << endl;
+>>>>>>> 7b5b79575d0c6cfa1b31f64e33ddfac87100f287
             }
         }
         if (pizza == 2)
@@ -269,9 +282,23 @@ if (edad > 1)
             cout << "2. Ham" << endl;
             cout << "3. Salmón" << endl;
 
+<<<<<<< HEAD
             cout << "\nIngredient you want to add:" << endl;
             cin >> ingrediente;
 
+=======
+        if (pizza == 2)
+        {
+            pizzav = "No Vegetarian";
+            cout << "\nIngredients of a no vegetarian pizza, it includes (Mozarella y Tomatoe) choose one: " << endl;
+            cout << "1. Pepperoni" << endl;
+            cout << "2. Ham" << endl;
+            cout << "3. Salmón" << endl;
+
+            cout << "\nIngredient you want to add:" << endl;
+            cin >> ingrediente;
+
+>>>>>>> 7b5b79575d0c6cfa1b31f64e33ddfac87100f287
             if (ingrediente == 1)
             {
                 ingre = "Pepperoni";
@@ -283,7 +310,11 @@ if (edad > 1)
             else if (ingrediente == 3)
             {
                 ingre = "Salmón";
+<<<<<<< HEAD
             }else{
+=======
+            }else {
+>>>>>>> 7b5b79575d0c6cfa1b31f64e33ddfac87100f287
                 cout << "Este ingrediente no existe" << endl;
             }
         }
@@ -296,11 +327,19 @@ if (edad > 1)
 ## Output (c++)
 ```c++
  //Output
+<<<<<<< HEAD
     cout << "\nDear Customer " << nombre << endl;
     cout << "Your order is: " << endl;
     cout << "A pizza of " << pizzav << endl;
     cout << "With these ingredients Mozzarella, Tomatoe y " << ingre << endl;
     cout << "\n¡Thanks for your preference!" << endl;
+=======
+      cout << "\nDear Customer " << nombre << endl;
+      cout << "Your order is: " << endl;
+      cout << "A pizza of " << pizzav << endl;
+      cout << "With these ingredients Mozzarella, Tomatoe y " << ingre << endl;
+      cout << "\n¡Thanks for your preference!" << endl;
+>>>>>>> 7b5b79575d0c6cfa1b31f64e33ddfac87100f287
 ```
 
 ## Explanation
