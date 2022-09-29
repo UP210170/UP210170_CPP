@@ -258,7 +258,7 @@ if ((pizza == 1) || (pizza == 2))
             {
                 ingre = "Tofu";
             }else{
-                cout << "Este igrediente no existe" << endl;
+                cout << "This ingredient doesn't exits" << endl;
             }
         }
         if (pizza == 2)
@@ -284,12 +284,12 @@ if ((pizza == 1) || (pizza == 2))
             {
                 ingre = "Salmón";
             }else{
-                cout << "Este ingrediente no existe" << endl;
+                cout << "This ingredient doesn't exits" << endl;
             }
         }
 
     }else {
-        cout << "El valor ingresado no se encontro" << endl;
+        cout << "The entered value was not found" << endl;
     }
 ```
 
@@ -313,16 +313,16 @@ if ((pizza == 1) || (pizza == 2))
 
 ## Screen shots
 ### - Pizza Vegetarian with Pimiento
-<img src="https://github.com/UP210170/UP210170_CPP/blob/main/imagenes/Pimiento.png" alt="5%" align="center">
+<img src="https://github.com/UP210170/UP210170_CPP/blob/main/imagenes/Pepper.png" alt="5%" align="center">
 
 ### - Pizza Vegetarian with Tofu
 <img src="https://github.com/UP210170/UP210170_CPP/blob/main/imagenes/Tofu.png" alt="5%" align="center">
 
 ### - Pizza No vegetarian with Peperoni
-<img src="https://github.com/UP210170/UP210170_CPP/blob/main/imagenes/Peperoni.png" alt="5%" align="center">
+<img src="https://github.com/UP210170/UP210170_CPP/blob/main/imagenes/Pepperoni.png" alt="5%" align="center">
 
 ### - Pizza No vegetarian with Jamón
-<img src="https://github.com/UP210170/UP210170_CPP/blob/main/imagenes/Jamon.png" alt="5%" align="center">
+<img src="https://github.com/UP210170/UP210170_CPP/blob/main/imagenes/Ham.png" alt="5%" align="center">
 
 ### - Pizza No vegetarian with Salmón
 <img src="https://github.com/UP210170/UP210170_CPP/blob/main/imagenes/Salmon.png" alt="5%" align="center">

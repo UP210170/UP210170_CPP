@@ -29,11 +29,7 @@ int main()
     int ingrediente;
     string ingre = "Pepper"
                    "Tofu"
-<<<<<<< HEAD
                    "Pepeproni"
-=======
-                   "Pepperoni"
->>>>>>> 7b5b79575d0c6cfa1b31f64e33ddfac87100f287
                    "Ham"
                    "Salmón";
     string pizzav = "Vegetarian"
@@ -69,18 +65,13 @@ int main()
 
             if (ingrediente == 1)
             {
-<<<<<<< HEAD
                 ingre = "Pepper";
-=======
-                ingre = "Pimiento";
->>>>>>> 7b5b79575d0c6cfa1b31f64e33ddfac87100f287
             }
             else if (ingrediente == 2)
             {
                 ingre = "Tofu";
             }else{
-<<<<<<< HEAD
-                cout << "Este igrediente no existe" << endl;
+                cout << "This ingredient doesn't exits" << endl;
             }
         }
         if (pizza == 2)
@@ -106,42 +97,10 @@ int main()
             {
                 ingre = "Salmón";
             }else{
-=======
->>>>>>> 7b5b79575d0c6cfa1b31f64e33ddfac87100f287
-                cout << "Este ingrediente no existe" << endl;
+                cout << "This ingredient doesn't exits" << endl;
             }
         }
 
-<<<<<<< HEAD
-=======
-        if (pizza == 2)
-        {
-            pizzav = "No Vegetarian";
-            cout << "\nIngredients of a no vegetarian pizza, it includes (Mozarella y Tomatoe) choose one: " << endl;
-            cout << "1. Pepperoni" << endl;
-            cout << "2. Ham" << endl;
-            cout << "3. Salmón" << endl;
-
-            cout << "\nIngredient you want to add:" << endl;
-            cin >> ingrediente;
-
-            if (ingrediente == 1)
-            {
-                ingre = "Pepperoni";
-            }
-            else if (ingrediente == 2)
-            {
-                ingre = "Ham";
-            }
-            else if (ingrediente == 3)
-            {
-                ingre = "Salmón";
-            }else {
-                cout << "Este ingrediente no existe" << endl;
-            }
-        }
-
->>>>>>> 7b5b79575d0c6cfa1b31f64e33ddfac87100f287
         // Output
         cout << "\nDear Customer " << nombre << endl;
         cout << "Your order is: " << endl;
@@ -151,7 +110,7 @@ int main()
     }
     else
     {
-        cout << "El valor ingresado no se encontro" << endl;
+        cout << "The entered value was not found" << endl;
     }
 
     return 0;
