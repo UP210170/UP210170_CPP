@@ -211,3 +211,117 @@ if (edad > 1)
 
 ### - Age < 1
 <img src="https://github.com/UP210170/UP210170_CPP/blob/main/imagenes/0.png" alt="5%" align="center" height="150" width="700">
+
+
+# Exercise 4: Ask the client what pizza do you want and select the ingredients 
+## Preprocessor directives (c++)
+```c++
+#include <iostream>
+#include <stdio.h>
+```   
+
+## Input (c++)
+```c++
+//Input
+    cout << "\nWelcome, What her name?" << endl;
+    cin >> nombre;
+
+
+    cout << "\n\n Option Menu" << endl;
+    cout << "1. Vegetarian" << endl;
+    cout << "2. No Vegetarian" << endl;
+
+    cout << "\n\nEnter a pizza option: " << endl;
+    cin >> pizza;
+```
+
+## Processing (c++)
+```c++
+    //Processing 
+    if((pizza == 1) || (pizza == 2)){
+        if (pizza == 1){
+        pizzav = "Vegetarian";
+        cout << "\nIngredients of a vegetarian pizza, it includes (Mozarella y Tomate) choose one: " << endl;
+        cout << "1. Pimiento" << endl;
+        cout << "2. Tofu" << endl;
+
+        cout << "\nIngredient you want to add:" << endl;
+        cin >> ingrediente;
+
+        if(ingrediente == 1){
+            ingre = "Pimiento";
+        } 
+        else if(ingrediente == 2){
+            ingre = "Tofu";
+        }
+
+ 
+      
+       }
+
+
+       if(pizza == 2){
+        pizzav = "No Vegetarian";
+        cout << "\nIngredients of a no vegetarian pizza, it includes (Mozarella y Tomate) choose one: " << endl;
+        cout << "1. Peperoni" << endl;
+        cout << "2. Jamón" << endl;
+        cout << "3. Salmón" << endl;
+
+        cout << "\nIngredient you want to add:" << endl;
+        cin >> ingrediente;
+        
+        if(ingrediente == 1){
+            ingre = "Peperoni";
+        }
+        else if(ingrediente == 2){
+            ingre = "Jamón";
+        }
+        else if(ingrediente == 3){
+            ingre = "Salmón";
+        }
+ 
+       }
+
+    }else {
+        cout << "El valor ingresado no se encontro" << endl;
+    }
+```
+
+## Output (c++)
+```c++
+ //Output
+    cout << "\nDear Customer " << nombre << endl;
+    cout << "Your order is: " << endl;
+    cout << "A pizza of " << pizzav << endl;
+    cout << "With these ingredients Mozarella, Tomate y " << ingre << endl;
+    cout << "\n¡Thanks for your preference!" << endl;
+```
+
+## Explanation
+1. Ask the client what pizza do you want and what ingredient do you want
+2. (1) Vegetarian (2) No Vegetarian 
+3. Vegetarian - (1) Pimiento (2) Tofu
+4. No Vegetarian - (1) Peperoni (2) Jamón (3) Salmón
+5. Printf the type pizza, ingredients and name of the client
+6. If the number selecction is different to 1 or 2 you receive an alert
+
+## Screen shots
+### - Pizza Vegetarian with Pimiento
+<img src="https://github.com/UP210170/UP210170_CPP/blob/main/imagenes/Pimiento.png" alt="5%" align="center" height="150" width="700">
+
+### - Pizza Vegetarian with Tofu
+<img src="https://github.com/UP210170/UP210170_CPP/blob/main/imagenes/4 y 18.png" alt="5%" align="center" height="150" width="700">
+
+### - Pizza No vegetarian with Peperoni
+<img src="https://github.com/UP210170/UP210170_CPP/blob/main/imagenes/mas 18.png" alt="5%" align="center" height="150" width="700">
+
+### - Pizza No vegetarian with Jamón
+<img src="https://github.com/UP210170/UP210170_CPP/blob/main/imagenes/0.png" alt="5%" align="center" height="150" width="700">
+
+### - Pizza No vegetarian with Salmón
+<img src="https://github.com/UP210170/UP210170_CPP/blob/main/imagenes/mas 18.png" alt="5%" align="center" height="150" width="700">
+
+### - Invalid Number
+<img src="https://github.com/UP210170/UP210170_CPP/blob/main/imagenes/0.png" alt="5%" align="center" height="150" width="700">
+
+
