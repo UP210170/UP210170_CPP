@@ -1,3 +1,14 @@
+<h1>
+WELCOME TO UNIT 2: CONTROL STRUCTURES AND CYCLES
+
+## Index:
+- [Exercise 1] (https://github.com/UP210170/UP210170_CPP/blob/main/U2/READMEU2.md#exercise-1-a-program-that-asks-the-user-for-his-annual-rent-and-exhibit-the-corresponding-tax-rate)
+- [Exercise 2] (https://github.com/UP210170/UP210170_CPP/blob/main/U2/READMEU2.md#exercise-2-a-program-that-asks-the-user-for-his-employment-score-and-show-his-final-salary)
+- [Exercise 3] (https://github.com/UP210170/UP210170_CPP/blob/main/U2/READMEU2.md#exercise-3-ask-the-age-and-show-the-entry-price-games-room)
+- [Exercise 4] (https://github.com/UP210170/UP210170_CPP/blob/main/U2/READMEU2.md#exercise-4-ask-the-client-what-pizza-do-you-want-and-select-the-ingredients)
+- [Exercise 5] ()
+
+
 # Exercise 1: A program that asks the user for his annual rent and exhibit the corresponding tax rate
 ## Preprocessor directives (c++)
 ```c++
@@ -330,4 +341,56 @@ if ((pizza == 1) || (pizza == 2))
 ### - Invalid Number
 <img src="https://github.com/UP210170/UP210170_CPP/blob/main/imagenes/NO.png" alt="5%" align="center">
 
+
+# Exercise 4: Ask the client what pizza do you want and select the ingredients 
+## Preprocessor directives (c++)
+```c++
+#include <iostream>
+```
+
+## Input (c++)
+```c++
+//Input
+    cout << "Give me the temperature: " << endl;
+    cin >> temperatura;
+```
+
+## Processing (c++)
+```c++
+do{
+     //Input
+    cout << "Give me the temperature: " << endl;
+    cin >> temperatura;
+    tempAcum += temperatura;
+
+    if(temperatura < drop){
+        drop = temperatura;
+    }
+    if(temperatura > high){
+        high = temperatura; 
+    }
+
+    contador++;
+    } while (contador <= 6);
+```
+
+## Output (c++)
+```c++
+    cout << "The average of temperature today is: " << tempAcum/6 << endl;
+    cout << "The highest temperature is: " << high << endl;
+    cout << "The lower temperature is: " << drop << endl;
+```
+
+## Explanation
+1. Ask for six temperatures
+2. If temperature is bigger than the previous, the data is saved
+3. If temperature is lower than the previous, the data is saved
+4. On the screen:
+4.1 The average of the temperatures  
+4.2 The highest temperature  
+4.3 The lower temperature  
+
+## Screen shots
+### Demonstration
+<img src="https://github.com/UP210170/UP210170_CPP/blob/main/imagenes/Temperature.png" alt="5%" align="center">
 
