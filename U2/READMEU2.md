@@ -76,19 +76,19 @@ WELCOME TO UNIT 2: CONTROL STRUCTURES AND CYCLES
 
 ## Screen shots
 ### - Rent < $10,000
-<img src="https://github.com/UP210170/UP210170_CPP/blob/main/imagenes/5%25.png" alt="5%" align="center" height="150" width="700">
+<img src="../imagenes/5%25.png" alt="5%" align="center" height="150" width="700">
 
 ### - Rent >= $10,000 and Rent < $20,000
-<img src="https://github.com/UP210170/UP210170_CPP/blob/main/imagenes/15%25.png" alt="15%" align="center" height="150" width="700">
+<img src="../imagenes/15%25.png" alt="15%" align="center" height="150" width="700">
 
 ### - Rent >= $20,000 and Rent < $35,000
-<img src="https://github.com/UP210170/UP210170_CPP/blob/main/imagenes/20%25.png" alt="20%" align="center" height="150" width="700">
+<img src="../imagenes/20%25.png" alt="20%" align="center" height="150" width="700">
 
 ### - Rent >= $35,000 and Rent < $60,000
-<img src="https://github.com/UP210170/UP210170_CPP/blob/main/imagenes/30%25.png" alt="30%" align="center" height="150" width="700">
+<img src="../imagenes/30%25.png" alt="30%" align="center" height="150" width="700">
 
 ### - Rent >= $60,000 
-<img src="https://github.com/UP210170/UP210170_CPP/blob/main/imagenes/45%25.png" alt="45%" align="center" height="150" width="700">
+<img src="../imagenes/45%25.png" alt="45%" align="center" height="150" width="700">
 
 
 # Exercise 2: A program that asks the user for his employment score and show his final salary
@@ -147,16 +147,16 @@ WELCOME TO UNIT 2: CONTROL STRUCTURES AND CYCLES
 
 ## Screen shots
 ### - Score == 0.0
-<img src="https://github.com/UP210170/UP210170_CPP/blob/main/imagenes/0.0.png" alt="5%" align="center" height="150" width="700">
+<img src="../imagenes/0.0.png" alt="5%" align="center" height="150" width="700">
 
 ### - Score == 0.4
-<img src="https://github.com/UP210170/UP210170_CPP/blob/main/imagenes/0.4.png" alt="5%" align="center" height="150" width="700">
+<img src="../imagenes/0.4.png" alt="5%" align="center" height="150" width="700">
 
 ### - Score >= 0.6
-<img src="https://github.com/UP210170/UP210170_CPP/blob/main/imagenes/0.6.png" alt="5%" align="center" height="150" width="700">
+<img src="../imagenes/0.6.png" alt="5%" align="center" height="150" width="700">
 
 ### - Score > 1
-<img src="https://github.com/UP210170/UP210170_CPP/blob/main/imagenes/1.png" alt="5%" align="center" height="150" width="700">
+<img src="../imagenes/1.png" alt="5%" align="center" height="150" width="700">
 
 
 # Exercise 3: Ask the age and show the entry price (Games room)
@@ -212,16 +212,16 @@ if (edad > 1)
 
 ## Screen shots
 ### - Age < 4
-<img src="https://github.com/UP210170/UP210170_CPP/blob/main/imagenes/menor 4.png" alt="5%" align="center" height="150" width="700">
+<img src="../imagenes/menor 4.png" alt="5%" align="center" height="150" width="700">
 
 ### - Age >= 4 or Age <= 18
-<img src="https://github.com/UP210170/UP210170_CPP/blob/main/imagenes/4 y 18.png" alt="5%" align="center" height="150" width="700">
+<img src="../imagenes/4 y 18.png" alt="5%" align="center" height="150" width="700">
 
 ### - Age > 18
-<img src="https://github.com/UP210170/UP210170_CPP/blob/main/imagenes/mas 18.png" alt="5%" align="center" height="150" width="700">
+<img src="../imagenes/mas 18.png" alt="5%" align="center" height="150" width="700">
 
 ### - Age < 1
-<img src="https://github.com/UP210170/UP210170_CPP/blob/main/imagenes/0.png" alt="5%" align="center" height="150" width="700">
+<img src="../imagenes/0.png" alt="5%" align="center" height="150" width="700">
 
 
 # Exercise 4: Ask the client what pizza do you want and select the ingredients 
@@ -324,22 +324,22 @@ if ((pizza == 1) || (pizza == 2))
 
 ## Screen shots
 ### - Pizza Vegetarian with Pimiento
-<img src="https://github.com/UP210170/UP210170_CPP/blob/main/imagenes/Pepper.png" alt="5%" align="center">
+<img src="../imagenes/Pepper.png" alt="5%" align="center">
 
 ### - Pizza Vegetarian with Tofu
-<img src="https://github.com/UP210170/UP210170_CPP/blob/main/imagenes/Tofu.png" alt="5%" align="center">
+<img src="../imagenes/Tofu.png" alt="5%" align="center">
 
 ### - Pizza No vegetarian with Peperoni
-<img src="https://github.com/UP210170/UP210170_CPP/blob/main/imagenes/Pepperoni.png" alt="5%" align="center">
+<img src="../imagenes/Pepperoni.png" alt="5%" align="center">
 
 ### - Pizza No vegetarian with Jamón
-<img src="https://github.com/UP210170/UP210170_CPP/blob/main/imagenes/Ham.png" alt="5%" align="center">
+<img src="../imagenes/Ham.png" alt="5%" align="center">
 
 ### - Pizza No vegetarian with Salmón
-<img src="https://github.com/UP210170/UP210170_CPP/blob/main/imagenes/Salmon.png" alt="5%" align="center">
+<img src="../imagenes/Salmon.png" alt="5%" align="center">
 
 ### - Invalid Number
-<img src="https://github.com/UP210170/UP210170_CPP/blob/main/imagenes/NO.png" alt="5%" align="center">
+<img src="../imagenes/NO.png" alt="5%" align="center">
 
 
 # Exercise 5: Ask the user for six temperatures
@@ -392,5 +392,5 @@ do{
 
 ## Screen shots
 ### Demonstration
-<img src="https://github.com/UP210170/UP210170_CPP/blob/main/imagenes/Temperature.png" alt="5%" align="center">
+<img src="../imagenes/Temperature.png" alt="5%" align="center">
 
