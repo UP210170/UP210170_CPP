@@ -8,6 +8,7 @@ WELCOME TO UNIT 2: CONTROL STRUCTURES AND CYCLES
 - [Exercise 4](https://github.com/UP210170/UP210170_CPP/blob/main/U2/READMEU2.md#exercise-4-ask-the-client-what-pizza-do-you-want-and-select-the-ingredients)
 - [Exercise 5](https://github.com/UP210170/UP210170_CPP/blob/main/U2/READMEU2.md#exercise-5-ask-the-user-for-six-temperatures)
 - [Exercise 6](https://github.com/UP210170/UP210170_CPP/blob/main/U2/READMEU2.md#exercise-6-program-where-you-enter-a-number-of-products-and-a-price-at-the-end-it-prints-the-total)
+- [Exercise 7](https://github.com/UP210170/UP210170_CPP/blob/main/U2/READMEU2.md#exercise-7-decimal-to-binary-conversion)
 
 
 
