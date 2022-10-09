@@ -16,8 +16,8 @@ int main (){
     int deci;
     string resultado;
  
-    cout << "Programa de conversión de Decimal a Binario" << endl;
-    cout << "Ingresa el número decimal: ";
+    cout << "Decimal to binary conversion program" << endl;
+    cout << "Enter the decimal number: ";
     cin >> deci;
 
     do
@@ -32,7 +32,7 @@ int main (){
                 }
                 deci /= 2;
             }
-         cout << "El número binario es: " << resultado << endl;
+         cout << "The binary number is: " << resultado << endl;
         }
         else if (deci == 0)
         {
@@ -40,7 +40,7 @@ int main (){
         }
         else
         {
-            cout << "Debe ser mayor a cero" << endl;
+            cout << "Must be greater than 0" << endl;
         }
     }while(deci < 0);
 

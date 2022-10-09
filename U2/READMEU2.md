@@ -394,3 +394,104 @@ do{
 ### Demonstration
 <img src="../imagenes/Temperature.png" alt="5%" align="center">
 
+# Exercise 6: Program where you enter a number of products and a price. At the end it prints the total
+## Preprocessor directives (c++)
+```c++
+#include <iostream>
+```
+
+## Input (c++)
+```c++
+//Input 
+    cout << "Enter number of products: ";
+    cin >> amount;
+```
+
+## Processing (c++)
+```c++
+ //Processing
+    do{
+        //Input 
+        cout << "Enter number of products: ";
+        cin >> amount;
+
+        if(amount != 0){
+            cout << "Price of the product: " << "$";
+            cin >> price;
+
+            total = amount * price + total;
+        }
+        
+    }while(amount != 0);
+```
+
+## Output (c++)
+```c++
+ //Output
+    cout << "The total invoice to pay is: " << "$" << total << endl;
+```
+
+## Explanation
+1. Ask number of products and also their price
+2. Multiply number of products by price
+3. To finish the purchase enter 0
+4. Print the invoice of the total purchase
+
+## Screen shots
+### A purchase
+<img src="../imagenes/Productos.png" alt="5%" align="center">
+
+# Exercise 7: Decimal to binary conversion
+## Preprocessor directives (c++)
+```c++
+#include <iostream>
+```
+
+## Input (c++)
+```c++
+    cout << "Decimal to binary conversion program" << endl;
+    cout << "Enter the decimal number: ";
+    cin >> deci;
+```
+
+## Processing (c++)
+```c++
+do
+    {
+        if (deci > 0)
+        {
+            while(deci != 0){
+                if(deci % 2 == 0){
+                    resultado = "0" + resultado;
+                }else{
+                    resultado = "1" + resultado;
+                }
+                deci /= 2;
+            }
+         cout << "The binary number is: " << resultado << endl;
+        }
+        else if (deci == 0)
+        {
+            cout << "0" << endl;
+        }
+        else
+        {
+            cout << "Must be greater than 0" << endl;
+        }
+    }while(deci < 0);
+```
+
+## Output (c++)
+```c++
+     cout << "The binary number is: " << resultado << endl;
+```
+
+## Explanation
+1. Enter decimal number
+2. It must be greater than 0, if it is less, the conversion does not proceed
+3. If it is greater, the conversion to binary is performed
+4. Print the number in binary
+
+## Screen shots
+### Conversion 1 > 0
+<img src="../imagenes/Decimal.png" alt="5%" align="center">

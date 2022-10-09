@@ -7,7 +7,7 @@ Description: Exercise Unit 2
 */
 
 /*Realizar un programa que lea indefinidamente cantidades de productos y su precio, y al final
-indique el total de la factura. Para saber que se ha terminado con la compra, se deberáingresar un 0 en la cantidad*/
+indique el total de la factura. Para saber que se ha terminado con la compra, se deberá ingresar un 0 en la cantidad*/
 
 #include <iostream>
 #include <stdio.h>
