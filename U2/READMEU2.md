@@ -453,7 +453,7 @@ do{
 
 ## Screen shots
 ### A purchase
-<img src="../imagenes/Productos.png" alt="5%" align="center">
+<img src="../imagenes/Productos .png" alt="5%" align="center">
 
 # Exercise 7: Decimal to binary conversion
 - [Welcome](https://github.com/UP210170/UP210170_CPP/blob/main/U2/READMEU2.md#welcome-to-unit-2-control-structures-and-cycles)
@@ -507,4 +507,4 @@ if(deci < 0){
 
 ## Screen shots
 ### Conversion 1 > 0
-<img src="../imagenes/Decimal.png" alt="5%" align="center">
+<img src="../imagenes/Decimal .png" alt="5%" align="center">
