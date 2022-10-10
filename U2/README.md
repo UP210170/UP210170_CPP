@@ -3,17 +3,17 @@ WELCOME TO UNIT 2: CONTROL STRUCTURES AND CYCLES
 
 ## Index:
 - [Exercise 1](#exercise-1-a-program-that-asks-the-user-for-his-annual-rent-and-exhibit-the-corresponding-tax-rate)
-- [Exercise 2](https://github.com/UP210170/UP210170_CPP/blob/main/U2/READMEU2.md#exercise-2-a-program-that-asks-the-user-for-his-employment-score-and-show-his-final-salary)
-- [Exercise 3](https://github.com/UP210170/UP210170_CPP/blob/main/U2/READMEU2.md#exercise-3-ask-the-age-and-show-the-entry-price-games-room)
-- [Exercise 4](https://github.com/UP210170/UP210170_CPP/blob/main/U2/READMEU2.md#exercise-4-ask-the-client-what-pizza-do-you-want-and-select-the-ingredients)
-- [Exercise 5](https://github.com/UP210170/UP210170_CPP/blob/main/U2/READMEU2.md#exercise-5-ask-the-user-for-six-temperatures)
-- [Exercise 6](https://github.com/UP210170/UP210170_CPP/blob/main/U2/READMEU2.md#exercise-6-program-where-you-enter-a-number-of-products-and-a-price-at-the-end-it-prints-the-total)
-- [Exercise 7](https://github.com/UP210170/UP210170_CPP/blob/main/U2/READMEU2.md#exercise-7-decimal-to-binary-conversion)
+- [Exercise 2](#exercise-2-a-program-that-asks-the-user-for-his-employment-score-and-show-his-final-salary)
+- [Exercise 3](#exercise-3-ask-the-age-and-show-the-entry-price-games-room)
+- [Exercise 4](#exercise-4-ask-the-client-what-pizza-do-you-want-and-select-the-ingredients)
+- [Exercise 5](#exercise-5-ask-the-user-for-six-temperatures)
+- [Exercise 6](#exercise-6-program-where-you-enter-a-number-of-products-and-a-price-at-the-end-it-prints-the-total)
+- [Exercise 7](#exercise-7-decimal-to-binary-conversion)
 
 
 
 # Exercise 1: A program that asks the user for his annual rent and exhibit the corresponding tax rate
-- [Welcome](https://github.com/UP210170/UP210170_CPP/blob/main/U2/READMEU2.md#welcome-to-unit-2-control-structures-and-cycles)
+- [Welcome](#welcome-to-unit-2-control-structures-and-cycles)
 ## Preprocessor directives (c++)
 ```c++
 #include <iostream>
@@ -96,7 +96,7 @@ WELCOME TO UNIT 2: CONTROL STRUCTURES AND CYCLES
 
 
 # Exercise 2: A program that asks the user for his employment score and show his final salary
-- [Welcome](https://github.com/UP210170/UP210170_CPP/blob/main/U2/READMEU2.md#welcome-to-unit-2-control-structures-and-cycles)
+- [Welcome](#welcome-to-unit-2-control-structures-and-cycles)
 
 ## Preprocessor directives (c++)
 ```c++
@@ -166,7 +166,7 @@ WELCOME TO UNIT 2: CONTROL STRUCTURES AND CYCLES
 
 
 # Exercise 3: Ask the age and show the entry price (Games room)
-- [Welcome](https://github.com/UP210170/UP210170_CPP/blob/main/U2/READMEU2.md#welcome-to-unit-2-control-structures-and-cycles)
+- [Welcome](#welcome-to-unit-2-control-structures-and-cycles)
 
 ## Preprocessor directives (c++)
 ```c++
@@ -233,7 +233,7 @@ if (edad > 1)
 
 
 # Exercise 4: Ask the client what pizza do you want and select the ingredients 
-- [Welcome](https://github.com/UP210170/UP210170_CPP/blob/main/U2/READMEU2.md#welcome-to-unit-2-control-structures-and-cycles)
+- [Welcome](#welcome-to-unit-2-control-structures-and-cycles)
 
 ## Preprocessor directives (c++)
 ```c++
@@ -353,7 +353,7 @@ if ((pizza == 1) || (pizza == 2))
 
 
 # Exercise 5: Ask the user for six temperatures
-- [Welcome](https://github.com/UP210170/UP210170_CPP/blob/main/U2/READMEU2.md#welcome-to-unit-2-control-structures-and-cycles)
+- [Welcome](#welcome-to-unit-2-control-structures-and-cycles)
 
 ## Preprocessor directives (c++)
 ```c++
@@ -407,7 +407,7 @@ do{
 <img src="../imagenes/Temperature.png" alt="5%" align="center">
 
 # Exercise 6: Program where you enter a number of products and a price. At the end it prints the total
-- [Welcome](https://github.com/UP210170/UP210170_CPP/blob/main/U2/READMEU2.md#welcome-to-unit-2-control-structures-and-cycles)
+- [Welcome](#welcome-to-unit-2-control-structures-and-cycles)
 
 ## Preprocessor directives (c++)
 ```c++
@@ -456,7 +456,7 @@ do{
 <img src="../imagenes/Productos .png" alt="5%" align="center">
 
 # Exercise 7: Decimal to binary conversion
-- [Welcome](https://github.com/UP210170/UP210170_CPP/blob/main/U2/READMEU2.md#welcome-to-unit-2-control-structures-and-cycles)
+- [Welcome](#welcome-to-unit-2-control-structures-and-cycles)
 
 ## Preprocessor directives (c++)
 ```c++
