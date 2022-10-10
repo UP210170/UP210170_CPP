@@ -472,7 +472,11 @@ do{
 
 ## Processing (c++)
 ```c++
-do
+if(deci < 0){
+    cout << "Must be greater than 0" << endl;
+}
+
+    do
     {
         if (deci > 0)
         {
@@ -481,15 +485,11 @@ do
                 resultado = (deci%2 == 0)?"0" + resultado : "1" + resultado;
                 deci /= 2;
             }
-         cout << "The binary number is: " << resultado << endl;
+            cout << "The binary number is: " << resultado << endl;
         }
         else if (deci == 0)
         {
             cout << "0" << endl;
-        }
-        else
-        {
-            cout << "Must be greater than 0" << endl;
         }
     }while(deci < 0);
 ```

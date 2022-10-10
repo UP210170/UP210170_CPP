@@ -20,8 +20,13 @@ int main (){
     cout << "Enter the decimal number: ";
     cin >> deci;
 
+    if(deci < 0){
+        cout << "Must be greater than 0" << endl;
+    }
+
     do
     {
+       
         if (deci > 0)
         {
             while(deci != 0){
@@ -34,10 +39,6 @@ int main (){
         else if (deci == 0)
         {
             cout << "0" << endl;
-        }
-        else
-        {
-            cout << "Must be greater than 0" << endl;
         }
     }while(deci < 0);
 
