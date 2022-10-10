@@ -13,7 +13,7 @@ WELCOME TO UNIT 2: CONTROL STRUCTURES AND CYCLES
 
 
 # Exercise 1: A program that asks the user for his annual rent and exhibit the corresponding tax rate
-- [Welcome](
+- [Welcome](https://github.com/UP210170/UP210170_CPP/blob/main/U2/READMEU2.md#welcome-to-unit-2-control-structures-and-cycles)
 ## Preprocessor directives (c++)
 ```c++
 #include <iostream>
@@ -96,6 +96,8 @@ WELCOME TO UNIT 2: CONTROL STRUCTURES AND CYCLES
 
 
 # Exercise 2: A program that asks the user for his employment score and show his final salary
+- [Welcome](https://github.com/UP210170/UP210170_CPP/blob/main/U2/READMEU2.md#welcome-to-unit-2-control-structures-and-cycles)
+
 ## Preprocessor directives (c++)
 ```c++
 #include <iostream>
@@ -164,6 +166,8 @@ WELCOME TO UNIT 2: CONTROL STRUCTURES AND CYCLES
 
 
 # Exercise 3: Ask the age and show the entry price (Games room)
+- [Welcome](https://github.com/UP210170/UP210170_CPP/blob/main/U2/READMEU2.md#welcome-to-unit-2-control-structures-and-cycles)
+
 ## Preprocessor directives (c++)
 ```c++
 #include <iostream>
@@ -229,6 +233,8 @@ if (edad > 1)
 
 
 # Exercise 4: Ask the client what pizza do you want and select the ingredients 
+- [Welcome](https://github.com/UP210170/UP210170_CPP/blob/main/U2/READMEU2.md#welcome-to-unit-2-control-structures-and-cycles)
+
 ## Preprocessor directives (c++)
 ```c++
 #include <iostream>
@@ -347,6 +353,8 @@ if ((pizza == 1) || (pizza == 2))
 
 
 # Exercise 5: Ask the user for six temperatures
+- [Welcome](https://github.com/UP210170/UP210170_CPP/blob/main/U2/READMEU2.md#welcome-to-unit-2-control-structures-and-cycles)
+
 ## Preprocessor directives (c++)
 ```c++
 #include <iostream>
@@ -399,6 +407,8 @@ do{
 <img src="../imagenes/Temperature.png" alt="5%" align="center">
 
 # Exercise 6: Program where you enter a number of products and a price. At the end it prints the total
+- [Welcome](https://github.com/UP210170/UP210170_CPP/blob/main/U2/READMEU2.md#welcome-to-unit-2-control-structures-and-cycles)
+
 ## Preprocessor directives (c++)
 ```c++
 #include <iostream>
@@ -446,6 +456,8 @@ do{
 <img src="../imagenes/Productos.png" alt="5%" align="center">
 
 # Exercise 7: Decimal to binary conversion
+- [Welcome](https://github.com/UP210170/UP210170_CPP/blob/main/U2/READMEU2.md#welcome-to-unit-2-control-structures-and-cycles)
+
 ## Preprocessor directives (c++)
 ```c++
 #include <iostream>
