@@ -464,11 +464,8 @@ do
         if (deci > 0)
         {
             while(deci != 0){
-                if(deci % 2 == 0){
-                    resultado = "0" + resultado;
-                }else{
-                    resultado = "1" + resultado;
-                }
+                /*resultado = to_string(deci%2) + resultado;*/
+                resultado = (deci%2 == 0)?"0" + resultado : "1" + resultado;
                 deci /= 2;
             }
          cout << "The binary number is: " << resultado << endl;
