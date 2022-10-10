@@ -13,6 +13,7 @@ WELCOME TO UNIT 2: CONTROL STRUCTURES AND CYCLES
 
 
 # Exercise 1: A program that asks the user for his annual rent and exhibit the corresponding tax rate
+- [Welcome](
 ## Preprocessor directives (c++)
 ```c++
 #include <iostream>
