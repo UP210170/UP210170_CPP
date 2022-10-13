@@ -9,7 +9,7 @@ WELCOME TO UNIT 2: CONTROL STRUCTURES AND CYCLES
 - [Exercise 5](#exercise-5-ask-the-user-for-six-temperatures)
 - [Exercise 6](#exercise-6-program-where-you-enter-a-number-of-products-and-a-price-at-the-end-it-prints-the-total)
 - [Exercise 7](#exercise-7-decimal-to-binary-conversion)
-
+- [Exercise 8](#exercise-8-multiplication-table)
 
 
 # Exercise 1: A program that asks the user for his annual rent and exhibit the corresponding tax rate
@@ -508,3 +508,62 @@ if(deci < 0){
 ## Screen shots
 ### Conversion 1 > 0
 <img src="../imagenes/Decimal .png" alt="5%" align="center">
+
+
+# Exercise 8: Multiplication table
+- [Welcome](#welcome-to-unit-2-control-structures-and-cycles)
+
+## Preprocessor directives (c++)
+```c++
+#include <iostream>
+```
+
+## Input (c++)
+```c++
+    cout << "Enter a table limit: ";
+    cin >> limite;
+
+    cout << "Enter a whole number: ";
+    cin >> numero;
+```
+
+## Processing (c++)
+```c++
+    if (numero <= 1 || numero >= 1)
+    {
+        for (i = 1; i <= limite; i++)
+        {
+            if (i == 1)
+            {
+                for (int espacio = 0; espacio <= 39; espacio++)
+                {
+                    cout << "-";
+                }
+                cout << "\n";
+            }
+            
+            cout << "|" << i << "\t x \t" << numero << "\t = \t" << (numero * i) << "\t|\n";
+
+            for (int espacio = 0; espacio <= 39; espacio++)
+            {
+                cout << "-";
+            }
+            cout << "\n";
+        }
+    }
+```
+
+## Output (c++)
+```c++
+    cout << "The number table" << numero << endl;
+```
+
+## Explanation
+1. Enter a limit of values ​​from the table
+2. Then, enter the integer to display your table
+3. All values ​​in the data are accepted. not at the limit
+4. Print the table
+
+## Screen shots
+### Table 8 
+<img src="../imagenes/Tabla8.png" alt="5%" align="center">
