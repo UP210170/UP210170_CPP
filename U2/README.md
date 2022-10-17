@@ -10,6 +10,7 @@ WELCOME TO UNIT 2: CONTROL STRUCTURES AND CYCLES
 - [Exercise 6](#exercise-6-program-where-you-enter-a-number-of-products-and-a-price-at-the-end-it-prints-the-total)
 - [Exercise 7](#exercise-7-decimal-to-binary-conversion)
 - [Exercise 8](#exercise-8-multiplication-table)
+- [Exercise 9](#exercise-9-bisection-method)
 
 
 # Exercise 1: A program that asks the user for his annual rent and exhibit the corresponding tax rate
@@ -567,3 +568,74 @@ if(deci < 0){
 ## Screen shots
 ### Table 8 
 <img src="../imagenes/Tabla8.png" alt="5%" align="center">
+
+# Exercise 9: Bisection method 
+- [Welcome](#welcome-to-unit-2-control-structures-and-cycles)
+
+## Preprocessor directives (c++)
+```c++
+#include <iostream>
+#include <cmath>
+#include <iomanip> //Para el set precision 
+```
+
+## Input (c++)
+```c++
+//Input 
+    cout << "Ingresa el valor de a: ";
+    cin >> a;
+
+    cout << "Ingresa el valor de b: ";
+    cin >> b;
+```
+
+## Processing (c++)
+```c++
+//Procesing 
+    do{
+         ya = plantearecuacion (a);
+         yb = plantearecuacion (b);
+         c = (a+b)/2;
+         yc = plantearecuacion (c);
+
+        cout << "| " << interador << fixed << setprecision(8) << "\t\t| " << a << "\t\t| " << b << "\t\t| " << c << "\t\t| " << ya << "\t\t| " << yb << "\t\t| " << yc << "\t\t| \n"; //Se imprimen los resultados de cada columna 
+        imprimirtabla();
+        
+        if((ya * yc) < 0){
+            b = c;
+        }else{
+            a = c;
+        }
+
+
+        if(a == b){
+            solucion = 0;
+            break;
+        }
+
+        interador++;
+
+    }while(abs(yc) >= margenerror);
+```
+
+## Output (c++)
+```c++
+//Output
+    if(solucion != 0){
+            cout << "The root is: " << setprecision(3) << c << "\n";
+    }else{
+            cout << "These numbers have no range";
+    }
+```
+
+## Explanation
+1. The values ​​of a and b are requested.
+2. Calculate the value of c
+3. Get the values ​​of y with a,b and c
+4. if (ya * yc) is minor than 0 b = c and if not a = c
+5. When the value of and c are between greater than or equal to 0.01 or less than or equal to -0.01 exit the while
+6. Printf the table 
+
+## Screen shots
+### a = 1 b = 10 
+<img src="../imagenes/A1B10.png" alt="5%" align="center">
