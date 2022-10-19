@@ -15,6 +15,10 @@ Will be made through of Visual Studio Code
 
 <img src="https://github.com/UP210170/UP210170_CPP/blob/main/imagenes/vscode.png" alt="Logo" width="120px" align="center">
 
+<img src= "/../UP210170_cpp/imagenes/eae70f35c316a431dea4e239286c27c2.jpg" />
+
+<img src="../UP210170_CPP/imagenes/eae70f35c316a431dea4e239286c27c2.jpg"/>
+
 ## 🆙&nbsp; Main Structure
 * U1 --- Unit 1 "Programming introduction"
 * U2 --- Unit 2 "Control structures and cycles"
