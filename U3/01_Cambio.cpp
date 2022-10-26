@@ -30,6 +30,12 @@ int main(){
    return 0;
 }
 
+
+
+
+
+
+
 void obtenerCambio(int dinero){
     while (dinero > 0)
     {
@@ -43,46 +49,9 @@ void obtenerCambio(int dinero){
                         : (dinero >= 2) ? dos++, dinero -= 2 
                         : (dinero >= 1) ? uno++, dinero -= 1 
                         : dinero; 
-        /*
-        if(dinero >= 500){
-            dinero = dinero - 500;
-            quinientos++;
-        }
-        else if(dinero >= 200){
-            dinero = dinero - 200;
-            docientos++;
-        }
-        else if(dinero >= 100){
-            dinero = dinero - 100;
-            cien++;
-        }
-        else if(dinero >= 50){
-            dinero = dinero - 50;
-            cincuenta++;
-        }
-        else if(dinero >= 20){
-            dinero = dinero - 20;
-            veinte++;
-        }
-        else if(dinero >= 10){
-            dinero -= 10;
-            diez++;
-        }
-        else if(dinero >= 5){
-            dinero -= 5;
-            cinco++;
-        }
-        else if(dinero >= 2){
-            dinero -= 2;
-            dos++;
-        }
-        else if(dinero >= 1){
-            dinero -= 1;
-            uno++;
-        }
+       
     }
-*/
-    }
+}
 
 void imprimirCambio(string dinero){
     cout << "EL cambio de dinero ingresado: " << dinero << endl;
