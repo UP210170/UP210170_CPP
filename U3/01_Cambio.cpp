@@ -17,6 +17,7 @@ int quinientos = 0, docientos = 0, cien = 0;
 int cincuenta = 0, veinte = 0;
 int diez = 0, cinco = 0, dos = 0, uno = 0;
 
+
 int main()
 {
     int dinero;
