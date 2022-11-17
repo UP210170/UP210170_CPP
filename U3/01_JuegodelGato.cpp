@@ -10,6 +10,8 @@ Description: Unit 3
 
 using namespace std;
 
+void remplazarXima(int);
+void remplazarOima(int);
 
 char Cat[3][3] = {{'1','2','3'},{'4','5','6'},{'7','8','9'}};
 char Gatoima[3][3] = {{'1','2','3'},{'4','5','6'},{'7','8','9'}};
@@ -101,8 +103,8 @@ string Player_CPU = "CPU";
 int row, col;
 int Turn = 1;
 int win;
-const char Humano = 'O';
-const char PC = 'X';
+const char Humano = 'X';
+const char PC = 'O';
 const string Tablero = "REAL";
 const string Tableroimaginario = "IMAGINARIO";
 
@@ -171,12 +173,14 @@ int main(){
             {
                 if ((Turn - 1) % 2 == 0)
                 {
-                    cout << "Win the player " << Player2;
+                    cout << "Win the "
+                         << "\033[0;31m" << Player2 << "\033[0m";
                     cout << "\n";
                 }
                 else
                 {
-                    cout << "Win the player " << Player1;
+                    cout << "Win the "
+                         << "\033[0;31m" << Player1 << "\033[0m";
                     cout << "\n";
                 }
             }
@@ -246,7 +250,7 @@ int main(){
             }
             else
             {
-                cout << "Tie";
+                cout << "\033[1;34m" << " ***********************  Tie ************************" << "\033[0m";
             }
         }
     }
@@ -468,7 +472,7 @@ int CPU(){
     srand(time(NULL));
 
     Move = The_best_move(PC);
-
+   
     if(Move != -1){
         return Move;
     }
@@ -487,35 +491,9 @@ int CPU(){
 }
 
 bool Check_playima(int Move){
-    if(Move == 1){
-        row = 0;
-        col = 0;
-    }else if(Move == 2){
-        row = 0;
-        col = 1;
-    }else if(Move == 3){
-        row = 0;
-        col = 2;
-    }else if(Move == 4){
-        row = 1;
-        col = 0;
-    }else if(Move == 5){
-        row = 1;
-        col = 1;
-    }else if(Move == 6){
-        row = 1;
-        col = 2;
-    }else if(Move == 7){
-        row = 2;
-        col = 0;
-    }else if(Move == 8){
-        row = 2;
-        col = 1;
-    }else if(Move == 9){
-        row = 2;
-        col = 2;
-    }
-    if(Gatoima[row][col] == 'O' || Gatoima[row][col] == 'X'){
+    int row = Move / 10, col = Move - 1;
+   
+    if(Gatoima[row][col] == 'X' || Gatoima[row][col] == 'O'){
         return true;
     }else{
         return false;
@@ -588,25 +566,26 @@ int The_best_move(char jugador){
 
     Clone_array();
 
-    if(jugador == 'X'){
+    if(jugador == Humano){
         do{
             Move++;
             section_occupied = Check_playima(Move);
 
             if(section_occupied == false){
-                Place_playima(Move);
+                remplazarXima(Move);
                 win = Check_winima(Move);
             }
             Clone_array();
         }while(Move <= 9 && win == false);
     }
-    else if(jugador == 'O'){
+
+    else if(jugador == PC){
         do{
             Move++;
             section_occupied = Check_playima(Move);
 
             if(section_occupied == false){
-                Place_playima(Move);
+                remplazarOima(Move);
                 win = Check_winima(Move); 
             }
             Clone_array();
@@ -616,4 +595,58 @@ int The_best_move(char jugador){
         Move = -1;
     }
     return Move;
+}
+
+void remplazarXima(int Move){
+    char seleccionJugada;
+    if(Turn % 2 == 0){
+        seleccionJugada = 'X';
+    }
+
+    if(Move == 1){
+        Gatoima[0][0] = seleccionJugada;
+    }else if(Move == 2){
+        Gatoima[0][1] = seleccionJugada;
+    }else if(Move == 3){
+        Gatoima[0][2] = seleccionJugada;
+    }else if(Move == 4){
+        Gatoima[1][0] = seleccionJugada;
+    }else if(Move == 5){
+        Gatoima[1][1] = seleccionJugada;
+    }else if(Move == 6){
+        Gatoima[1][2] = seleccionJugada;
+    }else if(Move == 7){
+        Gatoima[2][0] = seleccionJugada;
+    }else if(Move == 8){
+        Gatoima[2][1] = seleccionJugada;
+    }else if(Move == 9){
+        Gatoima[2][2] = seleccionJugada;
+    }
+}
+
+void remplazarOima(int Move){
+    char seleccionJugada;
+    if(Turn % 2 == 1){
+        seleccionJugada = 'O';
+    }
+
+     if(Move == 1){
+        Gatoima[0][0] = seleccionJugada;
+    }else if(Move == 2){
+        Gatoima[0][1] = seleccionJugada;
+    }else if(Move == 3){
+        Gatoima[0][2] = seleccionJugada;
+    }else if(Move == 4){
+        Gatoima[1][0] = seleccionJugada;
+    }else if(Move == 5){
+        Gatoima[1][1] = seleccionJugada;
+    }else if(Move == 6){
+        Gatoima[1][2] = seleccionJugada;
+    }else if(Move == 7){
+        Gatoima[2][0] = seleccionJugada;
+    }else if(Move == 8){
+        Gatoima[2][1] = seleccionJugada;
+    }else if(Move == 9){
+        Gatoima[2][2] = seleccionJugada;
+    }
 }
