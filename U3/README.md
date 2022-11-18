@@ -102,6 +102,7 @@ In the game you should consider these points:
 * The symbols are already assigned [X][O] (Multiplayer = Player 1 [X] Player 2 [O] || Vs CPU = Player [X] CPU [O])
 
 <h2> Multiplayer Player 1 vs Player 2 </h2>
+
 When starting the game, it shows the game menus
 
 <div aling="center">
@@ -139,6 +140,28 @@ Here are the winners
  </div>
 <br>
 
+<h2> Player vs CPU </h2>
+
+When starting the game, it shows the game menus
+
+<div aling="center">
+<img src="../imagenes/menu1.png" align="center"> <img src="../imagenes/menu2.2.png" align="center">
+ </div>
+<br>
+
+Once inside the game, player 1 will select his first move. And the computer responds with a move to avoid winning and seek to win
+
+<div aling="center">
+<img src="../imagenes/cpu.png" align="center"> <img src="../imagenes/cpu2.png" align="center">
+ </div>
+<br>
+
+Here are the winners
+
+<div aling="center">
+<img src="../imagenes/win3.png" align="center">
+ </div>
+<br>
 
 
 ## Conclusions 
