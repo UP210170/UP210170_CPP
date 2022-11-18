@@ -1,12 +1,15 @@
-<h1>
-WELCOME TO UNIT 3: TIC TAC TOE GAME 
+<div aling="center">
 
-<br>
-<h2 aling="right">
+# WELCOME TO UNIT 3: TIC TAC TOE GAME 
+
+
 <img src="../imagenes/tictac.png">
-</h2>
-<br>
+  
+  
+</div>
 
+
+  
 ## Index
 
 
