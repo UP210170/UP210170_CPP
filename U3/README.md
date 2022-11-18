@@ -7,13 +7,12 @@ WELCOME TO UNIT 3: TIC TAC TOE GAME
 </h2>
 <br>
 
-## Index:
-- [Index:](#index)
+## Index
+- [Index](#index)
 - [Instructions for execution and use](#instructions-for-execution-and-use)
 - [Flowchart](#flowchart)
 - [Development and explanation of code execution](#development-and-explanation-of-code-execution)
 - [Conclusions](#conclusions)
-
 
 
 ## Instructions for execution and use 
