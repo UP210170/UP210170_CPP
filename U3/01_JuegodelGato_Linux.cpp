@@ -1,5 +1,5 @@
 /*
-Date: 09/11/2022
+Date: 17/11/2022
 Author: Oscar Noel Nuño Verdín
 Email: up210170@alumnos.upa.edu.mx
 Description: Unit 3
@@ -126,7 +126,7 @@ int main(){
 
     if (Game == 'Y' || Game == 'y')
     {
-        system("cls");
+        system("clear");
         //Ask the user which game mode he is going to play
         cout << "Choose a game mode (1. Multiplayer 2. VS CPU): ";
         cin >> Type_Game;
@@ -134,19 +134,19 @@ int main(){
         //Enter 1 player mode
         if (Type_Game == 1)
         {
-            system("cls");
+            system("clear");
             //Ask the names of player´s
             cout << "Welcome Player 1 - What is your name? " << endl;
             cin >> Player1;
 
-            system("cls");
+            system("clear");
 
             cout << "Welcome Player 2 - What is your name? " << endl;
             cin >> Player2;
 
             do
             {
-                system("cls");
+                system("clear");
                 cout << "*************************  Player 1 [X] vs  Player 2 [O] ****************************";
                 cout << "\n";
                 make_board();
@@ -156,7 +156,7 @@ int main(){
                     Section_occupied = Check_play(Move);
                     if (Section_occupied == true)
                     {
-                        system("cls");
+                        system("clear");
                         cout << "Try again \n";
                         make_board();
                     }
@@ -168,7 +168,7 @@ int main(){
 
             } while (Game_over == false && Turn < 10);
 
-            system("cls");
+            system("clear");
             make_board();
 
             if (Game_over == true)
@@ -195,14 +195,14 @@ int main(){
         else if (Type_Game == 2)
         {
 
-            system("cls");
+            system("clear");
 
             cout << "Welcome Player 1 - What is your name? " << endl;
             cin >> Player3;
 
             do
             {
-                system("cls");
+                system("clear");
 
                 if((Turn - 1) % 2 == 0){
                     do{
@@ -211,7 +211,7 @@ int main(){
                         Section_occupied = Check_play(Move);
 
                         if(Section_occupied == true){
-                            system("cls");
+                            system("clear");
                             cout << "Try again \n";
                             make_board();
                         }
@@ -229,7 +229,7 @@ int main(){
 
             } while (Game_over == false and Turn < 10);
 
-            system("cls");
+            system("clear");
             make_board();
 
             if (Game_over == true)
@@ -253,14 +253,14 @@ int main(){
             }
         }
         else{
-            system("cls");
+            system("clear");
             cout << "\033[1;34m" << "Mode of game invalid" << "\033[0m";
         }
     }
 
     else
     {
-        system("cls");
+        system("clear");
         cout << "The Game is Over" << endl;
     }
 
