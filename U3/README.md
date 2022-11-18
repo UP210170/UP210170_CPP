@@ -1,15 +1,12 @@
-<div aling="center">
-
 # WELCOME TO UNIT 3: TIC TAC TOE GAME 
   
-</div aling="center">
-
-
-<div aling="center">
+<br>
+<p align="center">
   
+
 <img src="../imagenes/tictac.png" width="400px">
   
-</div aling="center">
+</p>
 
   
 ## Index
@@ -105,62 +102,62 @@ In the game you should consider these points:
 
 When starting the game, it shows the game menus
 
-<div aling="center">
+<p align="center">
 <img src="../imagenes/menu1.png" align="center"> <img src="../imagenes/menu2.png" align="center">
- </div>
+ </p>
 <br>
 
 Once inside the game, player 1 will select his first move
 
-<div aling="center">
+<p align="center">
 <img src="../imagenes/X1.png" align="center"> 
- </div>
+ </p>
 <br>
 
 Once the move has been entered, the second player selects his move (with care not to repeat the move)
 
-<div aling="center">
+<p align="center">
 <img src="../imagenes/O1.png" align="center"> 
- </div>
+ </p>
 <br>
 
 
 If any player selects a move that is busy, he is sent a message to try another move
 
-<div aling="center">
+<p align="center">
 <img src="../imagenes/try.png" align="center"> 
- </div>
+ </p>
 <br>
 
 
 Here are the winners
 
-<div aling="center">
+<p align="center">
 <img src="../imagenes/win1.png" align="center"> <img src="../imagenes/win2.png" align="center">
- </div>
+ </p>
 <br>
 
 <h2> Player vs CPU </h2>
 
 When starting the game, it shows the game menus
 
-<div aling="center">
+<p align="center">
 <img src="../imagenes/menu1.png" align="center"> <img src="../imagenes/win2.2.png" align="center">
- </div>
+ </p>
 <br>
 
 Once inside the game, player 1 will select his first move. And the computer responds with a move to avoid winning and seek to win
 
-<div aling="center">
+<p align="center">
 <img src="../imagenes/cpu.png" align="center"> <img src="../imagenes/cpu2.png" align="center">
- </div>
+ </p>
 <br>
 
 Here are the winners
 
-<div aling="center">
+<p align="center">
 <img src="../imagenes/win3.png" align="center">
- </div>
+ </p>
 <br>
 
 
