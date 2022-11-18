@@ -120,7 +120,7 @@ int main(){
 
     //Ask the user if you want to play
     cout << "Tic Tac Toe" << endl;
-    cout << "Press Y to play and N to exit: ";
+    cout << "Press Y to play and any letter to exit: ";
     cin >> Game;
 
 
@@ -147,6 +147,8 @@ int main(){
             do
             {
                 system("cls");
+                cout << "*************************  Player 1 [X] vs  Player 2 [O] ****************************";
+                cout << "\n";
                 make_board();
                 do
                 {
@@ -201,32 +203,29 @@ int main(){
             do
             {
                 system("cls");
-                make_board();
 
-                do
-                {
-                    if ((Turn - 1) % 2 == 0)
-                    {
-                        Move = Choose_playima();
-                    }
-                    else
-                    {
-                        Move = CPU();
-                    }
-
-                    Section_occupied = Check_play(Move);
-
-                    if (Section_occupied == true)
-                    {
-                        system("cls");
-                        cout << "Try again \n";
+                if((Turn - 1) % 2 == 0){
+                    do{
                         make_board();
-                    }
-                } while (Section_occupied == true);
+                        Move = Choose_playima();
+                        Section_occupied = Check_play(Move);
 
-                Place_play(Move);
+                        if(Section_occupied == true){
+                            system("cls");
+                            cout << "Try again \n";
+                            make_board();
+                        }
 
-                Game_over = Check_win();
+                    }while(Section_occupied == true);
+                    Place_play(Move);
+                    Game_over = Check_win();
+                }
+                else{
+                    make_board();
+                    Move = CPU();
+                    Place_play(Move);
+                    Game_over = Check_win();
+                }
 
             } while (Game_over == false and Turn < 10);
 
@@ -252,6 +251,10 @@ int main(){
             {
                 cout << "\033[1;34m" << " ***********************  Tie ************************" << "\033[0m";
             }
+        }
+        else{
+            system("cls");
+            cout << "\033[1;34m" << "Mode of game invalid" << "\033[0m";
         }
     }
 
@@ -566,7 +569,7 @@ int The_best_move(char jugador){
 
     Clone_array();
 
-    if(jugador == Humano){
+    if(jugador == PC){
         do{
             Move++;
             section_occupied = Check_playima(Move);
@@ -579,7 +582,7 @@ int The_best_move(char jugador){
         }while(Move <= 9 && win == false);
     }
 
-    else if(jugador == PC){
+    else if(jugador == Humano){
         do{
             Move++;
             section_occupied = Check_playima(Move);
