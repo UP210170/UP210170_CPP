@@ -3,8 +3,7 @@ WELCOME TO UNIT 3: TIC TAC TOE GAME
 
 <br>
 <h2 aling = "center">
-<img src="../imagenes/tictac.png" align="center">
-<h2>
+<img src="../imagenes/tictac.png" align="center"></h2>
 
 ## Index:
 <h3>
