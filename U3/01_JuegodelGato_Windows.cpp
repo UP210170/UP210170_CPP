@@ -182,7 +182,7 @@ int main(){
                 else
                 {
                     cout << "Win the "
-                         << "\033[0;31m" << Player1 << "\033[0m";
+                         << "\033[0;34m" << Player1 << "\033[0m";
                     cout << "\n";
                 }
             }
