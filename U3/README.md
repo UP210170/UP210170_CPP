@@ -145,7 +145,7 @@ Here are the winners
 When starting the game, it shows the game menus
 
 <div aling="center">
-<img src="../imagenes/menu1.png" align="center"> <img src="../imagenes/menu2.2.png" align="center">
+<img src="../imagenes/menu1.png" align="center"> <img src="../imagenes/win2.2.png" align="center">
  </div>
 <br>
 
