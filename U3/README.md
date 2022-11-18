@@ -6,7 +6,7 @@ WELCOME TO UNIT 3: TIC TAC TOE GAME
 <img src="../imagenes/tictac.png">
 </h2>
 <br>
-#instrucciones-de-ejecuci%C3%B3n
+
 ## Index:
 - [Index:](#index)
 - [Instructions for execution and use](#instructions-for-execution-and-use)
