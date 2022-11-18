@@ -6,19 +6,20 @@ WELCOME TO UNIT 3: TIC TAC TOE GAME
 <img src="../imagenes/tictac.png">
 </h2>
 <br>
-
+#instrucciones-de-ejecuci%C3%B3n
 ## Index:
-- [Instruccion de ejecución](#exercise-1-a-program-that-asks-the-user-for-his-annual-rent-and-exhibit-the-corresponding-tax-rate)
-- [Diagrama de flujo](#exercise-2-a-program-that-asks-the-user-for-his-employment-score-and-show-his-final-salary)
-- [Explicacion de la ejecucion del codigo](#exercise-3-ask-the-age-and-show-the-entry-price-games-room)
-- [Conclusiones](#exercise-4-ask-the-client-what-pizza-do-you-want-and-select-the-ingredients)
+- [Index:](#index)
+- [Instructions for execution and use](#instructions-for-execution-and-use)
+- [Flowchart](#flowchart)
+- [Development and explanation of code execution](#development-and-explanation-of-code-execution)
+- [Conclusions](#conclusions)
 
-## Instrucciones de ejecución 
+## Instructions for execution and use 
 
 
-## Diagrama de flujo 
+## Flowchart 
 <img src="../imagenes/Diagrama.png" align="center">
 
-## Explicación ejecución
+## Development and explanation of code execution
 
-## Conclusiones 
+## Conclusions 
