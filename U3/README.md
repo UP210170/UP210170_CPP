@@ -102,11 +102,42 @@ In the game you should consider these points:
 * The symbols are already assigned [X][O] (Multiplayer = Player 1 [X] Player 2 [O] || Vs CPU = Player [X] CPU [O])
 
 <h2> Multiplayer Player 1 vs Player 2 </h2>
+When starting the game, it shows the game menus
+
+<div aling="center">
+<img src="../imagenes/menu1.png" align="center"> <img src="../imagenes/menu2.png" align="center">
+ </div>
+<br>
+
+Once inside the game, player 1 will select his first move
+
+<div aling="center">
+<img src="../imagenes/X1.png" align="center"> 
+ </div>
+<br>
+
+Once the move has been entered, the second player selects his move (with care not to repeat the move)
+
+<div aling="center">
+<img src="../imagenes/O1.png" align="center"> 
+ </div>
+<br>
 
 
-<img src="../imagenes/menu1.png" align="center">
+If any player selects a move that is busy, he is sent a message to try another move
+
+<div aling="center">
+<img src="../imagenes/try.png" align="center"> 
+ </div>
+<br>
 
 
+Here are the winners
+
+<div aling="center">
+<img src="../imagenes/win1.png" align="center"> <img src="../imagenes/win2.png" align="center">
+ </div>
+<br>
 
 
 
