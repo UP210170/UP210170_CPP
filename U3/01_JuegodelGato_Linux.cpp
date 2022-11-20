@@ -3,20 +3,47 @@ Date: 17/11/2022
 Author: Oscar Noel Nuño Verdín
 Email: up210170@alumnos.upa.edu.mx
 Description: Unit 3
+Last-Modification: 20/11/2022
 */
 
 #include <iostream>
 #include <time.h>
 
+
 using namespace std;
 
 void remplazarXima(int);
 void remplazarOima(int);
+void gatoxy(int x, int y){
+    cout << "\033[" << y << ";" << x << "f";
+}
 
 char Cat[3][3] = {{'1','2','3'},{'4','5','6'},{'7','8','9'}};
 char Gatoima[3][3] = {{'1','2','3'},{'4','5','6'},{'7','8','9'}};
 
 void make_board();
+int CPU_easy();
+/*
+Function to get the move of the CPU (Level easy)
+Return: Value of jugada 1 - 9
+*/
+
+int The_best_moveeasy(char);
+/*
+Function to obtain the best play of a certain player (Level easy)
+Params: The type of player
+Return: Value of jugada 1 - 9
+*/
+
+
+bool Chek_winimaeasy(int);
+/*
+Function to check if that move wins the game on the imaginary board (Level easy)
+Params: The type of board on which it is played
+Return: True if you win
+        False if you still don't win
+*/
+
 
 bool Check_play(int Move);
 /*
@@ -117,36 +144,43 @@ int main(){
     bool Section_occupied = true;
     char Game;
     int Type_Game;
+    int nivel;
 
     //Ask the user if you want to play
+    system("clear");
+    gatoxy(60, 5);
     cout << "Tic Tac Toe" << endl;
+    gatoxy(45, 6);
     cout << "Press Y to play and any letter to exit: ";
     cin >> Game;
-
 
     if (Game == 'Y' || Game == 'y')
     {
         system("clear");
-        //Ask the user which game mode he is going to play
+        // Ask the user which game mode he is going to play
+        gatoxy(45, 5);
         cout << "Choose a game mode (1. Multiplayer 2. VS CPU): ";
         cin >> Type_Game;
 
-        //Enter 1 player mode
+        // Enter 1 player mode
         if (Type_Game == 1)
         {
             system("clear");
-            //Ask the names of player´s
+            // Ask the names of player´s
+            gatoxy(45, 5);
             cout << "Welcome Player 1 - What is your name? " << endl;
             cin >> Player1;
 
             system("clear");
 
+            gatoxy(45, 5);
             cout << "Welcome Player 2 - What is your name? " << endl;
             cin >> Player2;
 
             do
             {
                 system("clear");
+                gatoxy(35, 2);
                 cout << "*************************  Player 1 [X] vs  Player 2 [O] ****************************";
                 cout << "\n";
                 make_board();
@@ -169,101 +203,201 @@ int main(){
             } while (Game_over == false && Turn < 10);
 
             system("clear");
+            gatoxy(35, 2);
+            cout << "*************************  Player 1 [X] vs  Player 2 [O] ****************************";
+            cout << "\n";
             make_board();
 
             if (Game_over == true)
             {
                 if ((Turn - 1) % 2 == 0)
                 {
-                    cout << "Win the "
-                         << "\033[0;31m" << Player2 << "\033[0m";
+                    gatoxy(45, 9);
+                    cout << "\033[0;31m" << "Win the "
+                         << Player2 << "\033[0m";
                     cout << "\n";
                 }
                 else
                 {
-                    cout << "Win the "
-                         << "\033[0;31m" << Player1 << "\033[0m";
+                    gatoxy(45, 9);
+                    cout << "\033[0;34m" << "Win the "
+                         << Player1 << "\033[0m";
                     cout << "\n";
                 }
             }
             else
             {
-                cout << "Tie";
+                gatoxy(45, 9);
+                cout << "\033[1;34m"
+                     << " ***********************  Tie ************************"
+                     << "\033[0m";
             }
         }
-        //Enter 2 player mode
+        // Enter 2 player mode
         else if (Type_Game == 2)
         {
 
             system("clear");
+            gatoxy(45, 5);
+            cout << "Difficulty level: 1 - Easy 2 - Medium" << endl;
+            cin >> nivel;
 
-            cout << "Welcome Player 1 - What is your name? " << endl;
-            cin >> Player3;
-
-            do
+            if (nivel == 1)
             {
                 system("clear");
 
-                if((Turn - 1) % 2 == 0){
-                    do{
-                        make_board();
-                        Move = Choose_playima();
-                        Section_occupied = Check_play(Move);
+                gatoxy(45, 5);
+                cout << "Welcome Player 1 - What is your name? " << endl;
+                cin >> Player3;
 
-                        if(Section_occupied == true){
-                            system("clear");
-                            cout << "Try again \n";
-                            make_board();
-                        }
-
-                    }while(Section_occupied == true);
-                    Place_play(Move);
-                    Game_over = Check_win();
-                }
-                else{
-                    make_board();
-                    Move = CPU();
-                    Place_play(Move);
-                    Game_over = Check_win();
-                }
-
-            } while (Game_over == false and Turn < 10);
-
-            system("clear");
-            make_board();
-
-            if (Game_over == true)
-            {
-                if ((Turn - 1) % 2 == 0)
+                do
                 {
-                    cout << "Win the "
-                         << "\033[0;31m" << Player_CPU << "\033[0m";
-                    cout << "\n";
+                    system("clear");
+
+                    if ((Turn - 1) % 2 == 0)
+                    {
+                        do
+                        {
+                            make_board();
+                            Move = Choose_playima();
+                            Section_occupied = Check_play(Move);
+
+                            if (Section_occupied == true)
+                            {
+                                system("clear");
+                                cout << "Try again \n";
+                                make_board();
+                            }
+
+                        } while (Section_occupied == true);
+                        Place_play(Move);
+                        Game_over = Check_win();
+                    }
+                    else
+                    {
+                        make_board();
+                        Move = CPU_easy();
+                        Place_play(Move);
+                        Game_over = Check_win();
+                    }
+
+                } while (Game_over == false and Turn < 10);
+
+                system("clear");
+                make_board();
+
+                if (Game_over == true)
+                {
+                    if ((Turn - 1) % 2 == 0)
+                    {
+                        gatoxy(45, 9);
+                        cout << "Win the "
+                             << "\033[0;31m" << Player_CPU << "\033[0m";
+                        cout << "\n";
+                    }
+                    else
+                    {
+                        gatoxy(45, 9);
+                        cout << "Win the player "
+                             << "\033[1;34m" << Player3 << "\033[0m";
+                        cout << "\n";
+                    }
                 }
                 else
                 {
-                    cout << "Win the player "
-                         << "\033[1;34m" << Player3 << "\033[0m";
-                    cout << "\n";
+                    gatoxy(45, 9);
+                    cout << "\033[1;34m"
+                         << " ***********************  Tie ************************"
+                         << "\033[0m";
                 }
             }
-            else
+            else if (nivel == 2)
             {
-                cout << "\033[1;34m" << " ***********************  Tie ************************" << "\033[0m";
+                system("clear");
+                gatoxy(45, 5);
+                cout << "Welcome Player 1 - What is your name? " << endl;
+                cin >> Player3;
+
+                do
+                {
+                    system("clear");
+
+                    if ((Turn - 1) % 2 == 0)
+                    {
+                        do
+                        {
+                            make_board();
+                            Move = Choose_playima();
+                            Section_occupied = Check_play(Move);
+
+                            if (Section_occupied == true)
+                            {
+                                system("clear");
+                                cout << "Try again \n";
+                                make_board();
+                            }
+
+                        } while (Section_occupied == true);
+                        Place_play(Move);
+                        Game_over = Check_win();
+                    }
+                    else
+                    {
+                        make_board();
+                        Move = CPU();
+                        Place_play(Move);
+                        Game_over = Check_win();
+                    }
+
+                } while (Game_over == false and Turn < 10);
+
+                system("clear");
+                make_board();
+
+                if (Game_over == true)
+                {
+                    if ((Turn - 1) % 2 == 0)
+                    {
+                        gatoxy(45, 9);
+                        cout << "Win the "
+                             << "\033[0;31m" << Player_CPU << "\033[0m";
+                        cout << "\n";
+                    }
+                    else
+                    {
+                        gatoxy(45, 9);
+                        cout << "Win the player "
+                             << "\033[1;34m" << Player3 << "\033[0m";
+                        cout << "\n";
+                    }
+                }
+                else
+                {
+                    gatoxy(45, 9);
+                    cout << "\033[1;34m"
+                         << " ***********************  Tie ************************"
+                         << "\033[0m";
+                }
             }
         }
-        else{
+        else
+        {
             system("clear");
-            cout << "\033[1;34m" << "Mode of game invalid" << "\033[0m";
+            gatoxy(45, 9);
+            cout << "\033[1;34m"
+                 << "Mode of game invalid"
+                 << "\033[0m";
         }
     }
 
     else
     {
         system("clear");
+        gatoxy(45, 9);
         cout << "The Game is Over" << endl;
     }
 
+    getchar();
     return 0;
 }
 
@@ -493,10 +627,60 @@ int CPU(){
     return Move;
 }
 
-bool Check_playima(int Move){
-    int row = Move / 10, col = Move - 1;
+int CPU_easy(){
+    int Move;
+    bool section_occupied = true;
+    srand(time(NULL));
+
+    Move = The_best_moveeasy(PC);
    
-    if(Gatoima[row][col] == 'X' || Gatoima[row][col] == 'O'){
+    if(Move != -1){
+        return Move;
+    }
+
+    Move = The_best_moveeasy(Humano);
+
+    if(Move != -1){
+        return Move;
+    }
+
+    do{
+        Move = 1 + rand() % 9;
+        section_occupied = Check_play(Move);
+    }while(section_occupied == true);
+    return Move;
+}
+
+bool Check_playima(int Move){
+    if(Move == 1){
+        row = 0;
+        col = 0;
+    }else if(Move == 2){
+        row = 0;
+        col = 1;
+    }else if(Move == 3){
+        row = 0;
+        col = 2;
+    }else if(Move == 4){
+        row = 1;
+        col = 0;
+    }else if(Move == 5){
+        row = 1;
+        col = 1;
+    }else if(Move == 6){
+        row = 1;
+        col = 2;
+    }else if(Move == 7){
+        row = 2;
+        col = 0;
+    }else if(Move == 8){
+        row = 2;
+        col = 1;
+    }else if(Move == 9){
+        row = 2;
+        col = 2;
+    }
+    if(Gatoima[row][col] == 'O' || Gatoima[row][col] == 'X'){
         return true;
     }else{
         return false;
@@ -504,33 +688,31 @@ bool Check_playima(int Move){
 }
 
 bool Check_winima(int Move){
-     bool ganar = false;
-    if(Gatoima[0][0] == 'X' && (Gatoima[0][0] == Gatoima[0][1] || Gatoima[0][0] == Gatoima[0][2] ||  Gatoima[0][1] == Gatoima[0][2])
-    || Gatoima[1][0] == 'X' && (Gatoima[1][0] == Gatoima[1][1] || Gatoima[1][0] == Gatoima[1][2] ||  Gatoima[1][1] == Gatoima[1][2])
-    || Gatoima[2][0] == 'X' && (Gatoima[2][0] == Gatoima[2][1] || Gatoima[2][0] == Gatoima[2][2] ||  Gatoima[2][1] == Gatoima[2][2])
-    
-    || Gatoima[0][0] == 'X' && (Gatoima[0][0] == Gatoima[1][0] || Gatoima[0][0] == Gatoima[2][0] ||  Gatoima[1][0] == Gatoima[2][0])
-    || Gatoima[0][1] == 'X' && (Gatoima[0][1] == Gatoima[1][1] || Gatoima[0][1] == Gatoima[2][1] ||  Gatoima[1][1] == Gatoima[2][1])
-    || Gatoima[0][2] == 'X' && (Gatoima[0][2] == Gatoima[1][2] || Gatoima[0][2] == Gatoima[2][2] ||  Gatoima[1][2] == Gatoima[2][2])
-    
-    || Gatoima[0][0] == 'X' && (Gatoima[0][0] == Gatoima[1][1] || Gatoima[0][0] == Gatoima[2][2] ||  Gatoima[1][1] == Gatoima[2][2])
-    || Gatoima[0][2] == 'X' && (Gatoima[0][2] == Gatoima[1][1] || Gatoima[0][2] == Gatoima[2][0] ||  Gatoima[1][1] == Gatoima[2][0])){
-            ganar = true;
-    }
-    if(Gatoima[0][0] == 'O' && (Gatoima[0][0] == Gatoima[0][1] || Gatoima[0][0] == Gatoima[0][2] ||  Gatoima[0][1] == Gatoima[0][2])
-    || Gatoima[1][0] == 'O' && (Gatoima[1][0] == Gatoima[1][1] || Gatoima[1][0] == Gatoima[1][2] ||  Gatoima[1][1] == Gatoima[1][2])
-    || Gatoima[2][0] == 'O' && (Gatoima[2][0] == Gatoima[2][1] || Gatoima[2][0] == Gatoima[2][2] ||  Gatoima[2][1] == Gatoima[2][2])
-    
-    || Gatoima[0][0] == 'O' && (Gatoima[0][0] == Gatoima[1][0] || Gatoima[0][0] == Gatoima[2][0] ||  Gatoima[1][0] == Gatoima[2][0])
-    || Gatoima[0][1] == 'O' && (Gatoima[0][1] == Gatoima[1][1] || Gatoima[0][1] == Gatoima[2][1] ||  Gatoima[1][1] == Gatoima[2][1])
-    || Gatoima[0][2] == 'O' && (Gatoima[0][2] == Gatoima[1][2] || Gatoima[0][2] == Gatoima[2][2] ||  Gatoima[1][2] == Gatoima[2][2])
-    
-    || Gatoima[0][0] == 'O' && (Gatoima[0][0] == Gatoima[1][1] || Gatoima[0][0] == Gatoima[2][2] ||  Gatoima[1][1] == Gatoima[2][2])
-    || Gatoima[0][2] == 'O' && (Gatoima[0][2] == Gatoima[1][1] || Gatoima[0][2] == Gatoima[2][0] ||  Gatoima[1][1] == Gatoima[2][0])){
-        ganar = true;
-    }
+    bool winner = false;
+    int place = 0;
+    while (place < 3)
+    {
+        if (Gatoima[place][0] == Gatoima[place][1] && Gatoima[place][place] == Gatoima[place][2] && Gatoima[place][1] == Gatoima[place][2])
+        {
+            winner = true;
+            break;
+        }
+        else if (Gatoima[0][place] == Gatoima[1][place] && Gatoima[0][place] == Gatoima[2][place] && Gatoima[1][place] == Gatoima[2][place]){
+            winner = true;
+            break;
+        }
+        else if(Gatoima[0][0] == Gatoima[1][1] && Gatoima[0][0] == Gatoima[2][2] && Gatoima[1][1] == Gatoima[2][2]){
+            winner = true;
+            break;
+        }
+        else if(Gatoima[2][0] == Gatoima[1][1] && Gatoima[2][0] == Gatoima[0][2] && Gatoima[0][2] == Gatoima[1][1]){
+            winner = true;
+            break;
+        }
 
-    return ganar;
+    place++;
+    }
+return winner;
 }
 
 void Place_playima(int Move){
@@ -652,4 +834,73 @@ void remplazarOima(int Move){
     }else if(Move == 9){
         Gatoima[2][2] = seleccionJugada;
     }
+}
+
+bool Chek_winimaeasy(int Move){
+     bool ganar = false;
+    if(Gatoima[0][0] == 'X' && (Gatoima[0][0] == Gatoima[0][1] || Gatoima[0][0] == Gatoima[0][2] ||  Gatoima[0][1] == Gatoima[0][2])
+    || Gatoima[1][0] == 'X' && (Gatoima[1][0] == Gatoima[1][1] || Gatoima[1][0] == Gatoima[1][2] ||  Gatoima[1][1] == Gatoima[1][2])
+    || Gatoima[2][0] == 'X' && (Gatoima[2][0] == Gatoima[2][1] || Gatoima[2][0] == Gatoima[2][2] ||  Gatoima[2][1] == Gatoima[2][2])
+    
+    || Gatoima[0][0] == 'X' && (Gatoima[0][0] == Gatoima[1][0] || Gatoima[0][0] == Gatoima[2][0] ||  Gatoima[1][0] == Gatoima[2][0])
+    || Gatoima[0][1] == 'X' && (Gatoima[0][1] == Gatoima[1][1] || Gatoima[0][1] == Gatoima[2][1] ||  Gatoima[1][1] == Gatoima[2][1])
+    || Gatoima[0][2] == 'X' && (Gatoima[0][2] == Gatoima[1][2] || Gatoima[0][2] == Gatoima[2][2] ||  Gatoima[1][2] == Gatoima[2][2])
+    
+    || Gatoima[0][0] == 'X' && (Gatoima[0][0] == Gatoima[1][1] || Gatoima[0][0] == Gatoima[2][2] ||  Gatoima[1][1] == Gatoima[2][2])
+    || Gatoima[0][2] == 'X' && (Gatoima[0][2] == Gatoima[1][1] || Gatoima[0][2] == Gatoima[2][0] ||  Gatoima[1][1] == Gatoima[2][0])){
+            ganar = true;
+    }
+    if(Gatoima[0][0] == 'O' && (Gatoima[0][0] == Gatoima[0][1] || Gatoima[0][0] == Gatoima[0][2] ||  Gatoima[0][1] == Gatoima[0][2])
+    || Gatoima[1][0] == 'O' && (Gatoima[1][0] == Gatoima[1][1] || Gatoima[1][0] == Gatoima[1][2] ||  Gatoima[1][1] == Gatoima[1][2])
+    || Gatoima[2][0] == 'O' && (Gatoima[2][0] == Gatoima[2][1] || Gatoima[2][0] == Gatoima[2][2] ||  Gatoima[2][1] == Gatoima[2][2])
+    
+    || Gatoima[0][0] == 'O' && (Gatoima[0][0] == Gatoima[1][0] || Gatoima[0][0] == Gatoima[2][0] ||  Gatoima[1][0] == Gatoima[2][0])
+    || Gatoima[0][1] == 'O' && (Gatoima[0][1] == Gatoima[1][1] || Gatoima[0][1] == Gatoima[2][1] ||  Gatoima[1][1] == Gatoima[2][1])
+    || Gatoima[0][2] == 'O' && (Gatoima[0][2] == Gatoima[1][2] || Gatoima[0][2] == Gatoima[2][2] ||  Gatoima[1][2] == Gatoima[2][2])
+    
+    || Gatoima[0][0] == 'O' && (Gatoima[0][0] == Gatoima[1][1] || Gatoima[0][0] == Gatoima[2][2] ||  Gatoima[1][1] == Gatoima[2][2])
+    || Gatoima[0][2] == 'O' && (Gatoima[0][2] == Gatoima[1][1] || Gatoima[0][2] == Gatoima[2][0] ||  Gatoima[1][1] == Gatoima[2][0])){
+        ganar = true;
+    }
+
+    return ganar;
+}
+
+int The_best_moveeasy(char jugador){
+    bool section_occupied = false;
+    bool win = false;
+    int Move = 0;
+
+    Clone_array();
+
+    if(jugador == PC){
+        do{
+            Move++;
+            section_occupied = Check_playima(Move);
+
+            if(section_occupied == false){
+                remplazarXima(Move);
+                win = Chek_winimaeasy(Move);
+            }
+            Clone_array();
+        }while(Move <= 9 && win == false);
+    }
+
+    else if(jugador == Humano){
+        do{
+            Move++;
+            section_occupied = Check_playima(Move);
+
+            if(section_occupied == false){
+                remplazarOima(Move);
+                win = Chek_winimaeasy(Move); 
+            }
+            Clone_array();
+        }while(Move <= 9 && win == false);
+    }
+    if(Move >= 10){
+        Move = -1;
+    }
+    return Move;
+
 }
