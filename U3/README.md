@@ -2,20 +2,15 @@
   
 <br>
 <p align="center">
-  
-
 <img src="../imagenes/tictac.png" width="400px">
-  
 </p>
 
   
 ## Index
-- [WELCOME TO UNIT 3: TIC TAC TOE GAME](#welcome-to-unit-3-tic-tac-toe-game)
-  - [Index](#index)
-  - [Instructions for execution and use](#instructions-for-execution-and-use)
-  - [Flowchart](#flowchart)
-  - [Development and explanation of code execution](#development-and-explanation-of-code-execution)
-  - [Conclusions](#conclusions)
+ - [Instructions for execution and use](#instructions-for-execution-and-use)
+ - [Flowchart](#flowchart)
+ - [Development and explanation of code execution](#development-and-explanation-of-code-execution)
+ - [Conclusions](#conclusions)
 
 ## Instructions for execution and use 
 To enjoy and compete in this game, you must follow this series of steps (depending on your operating system):
@@ -92,8 +87,11 @@ gcc 01_JuegodelGato.cpp or 01_JuegodelGato.exe
 01_JuegodelGato.exe
 ~~~
 
+[Return to Index](#index)
 ## Flowchart 
 <img src="../imagenes/Diagrama.png" align="center">
+
+[Return to Index](#index)
 
 ## Development and explanation of code execution
 In the game you should consider these points:
@@ -139,6 +137,8 @@ Here are the winners
  </p>
 <br>
 
+[Return to Index](#index)
+
 <h2> Player vs CPU </h2>
 
 When starting the game, it shows the game menus
@@ -162,5 +162,13 @@ Here are the winners
  </p>
 <br>
 
+[Return to Index](#index)
 
 ## Conclusions 
+This program was the first most complex that we have practiced, at the beginning when making the first game mode PLAYER vs PLAYER it was something simple but when the time came to make the second game mode PLAYER vs CPU it was very complicated to do intelligence artificial and make the PC think of a play where they can win. One of the new things that was made was a duplicate or imaginary matrix for the PC and think of a play that won against the player The sources from which information was extracted were:
+1. The teacher
+2. Artificial intelligence explanation videos
+3. Play in the notebook to analyze the plays
+This serves as experience and be prepared in the near future
+
+[Return to Index](#index)
