@@ -10,10 +10,12 @@
 
   
 ## Index
-- [Instructions for execution and use](#instructions-for-execution-and-use)
-- [Flowchart](#flowchart)
-- [Development and explanation of code execution](#development-and-explanation-of-code-execution)
-- [Conclusions](#conclusions)
+- [WELCOME TO UNIT 3: TIC TAC TOE GAME](#welcome-to-unit-3-tic-tac-toe-game)
+  - [Index](#index)
+  - [Instructions for execution and use](#instructions-for-execution-and-use)
+  - [Flowchart](#flowchart)
+  - [Development and explanation of code execution](#development-and-explanation-of-code-execution)
+  - [Conclusions](#conclusions)
 
 ## Instructions for execution and use 
 To enjoy and compete in this game, you must follow this series of steps (depending on your operating system):
@@ -54,7 +56,7 @@ To enjoy and compete in this game, you must follow this series of steps (dependi
 4. Run the program, with the following command
 
  ~~~
- src
+ ./01JuegodelGato
  ~~~
 
 

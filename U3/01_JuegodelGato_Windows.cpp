@@ -12,6 +12,9 @@ using namespace std;
 
 void remplazarXima(int);
 void remplazarOima(int);
+void gatoxy(int x, int y){
+    cout << "\033[" << y << ";" << x << "f";
+}
 
 char Cat[3][3] = {{'1','2','3'},{'4','5','6'},{'7','8','9'}};
 char Gatoima[3][3] = {{'1','2','3'},{'4','5','6'},{'7','8','9'}};
@@ -119,7 +122,10 @@ int main(){
     int Type_Game;
 
     //Ask the user if you want to play
+    system("cls");
+    gatoxy(60, 5);
     cout << "Tic Tac Toe" << endl;
+    gatoxy(45, 6);
     cout << "Press Y to play and any letter to exit: ";
     cin >> Game;
 
@@ -169,6 +175,8 @@ int main(){
             } while (Game_over == false && Turn < 10);
 
             system("cls");
+            cout << "*************************  Player 1 [X] vs  Player 2 [O] ****************************";
+            cout << "\n";
             make_board();
 
             if (Game_over == true)
@@ -264,6 +272,8 @@ int main(){
         cout << "The Game is Over" << endl;
     }
 
+
+     getchar();
     return 0;
 }
 
