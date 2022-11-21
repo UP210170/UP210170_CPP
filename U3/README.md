@@ -163,9 +163,13 @@ Two difficulty levels (easy and medium) are added in the Player vs CPU game
 Once inside the game, player 1 will select his first move. And the computer responds with a move to avoid winning and seek to win
 
 <p align="center">
-<img src="../imagenes/cpu.png" align="center"> <img src="../imagenes/cpu2.png" align="center">
+<img src="../imagenes/cpu.png" align="center"> 
  </p>
 <br>
+<p align="center">
+<img src="../imagenes/cpu2.png" align="center"> 
+ </p>
+ <br>
 
 Here are the winners
 
@@ -173,6 +177,10 @@ Here are the winners
 <img src="../imagenes/win3.png" align="center">
  </p>
 <br>
+<p align="center">
+<img src="../imagenes/wincpu.png" align="center">
+ </p>
+ <br>
 
 [Return to Index](#index)
 
