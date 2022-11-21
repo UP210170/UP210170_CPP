@@ -144,7 +144,14 @@ Here are the winners
 When starting the game, it shows the game menus
 
 <p align="center">
-<img src="../imagenes/menu1.png" align="center"> <img src="../imagenes/win2.2.png" align="center">
+<img src="../imagenes/menu1.png" align="center"> <img src="../imagenes/menu4.png" align="center">
+ </p>
+<br>
+
+Two difficulty levels (easy and medium) are added in the Player vs CPU game
+
+<p align="center">
+<img src="../imagenes/menulevel.png" align="center"> 
  </p>
 <br>
 
