@@ -134,8 +134,7 @@ const char Humano = 'X';
 const char PC = 'O';
 const string Tablero = "REAL";
 const string Tableroimaginario = "IMAGINARIO";
-
-
+int Type_Game;
 
 int main(){
     //Declaration of variables 
@@ -143,23 +142,22 @@ int main(){
     bool Game_over = false;
     bool Section_occupied = true;
     char Game;
-    int Type_Game;
     int nivel;
 
     //Ask the user if you want to play
     system("cls");
     gatoxy(60, 5);
-    cout << "Tic Tac Toe" << endl;
+    cout << "\033[0;35m" << "Tic Tac Toe" << "\033[0m" << endl;
     gatoxy(45, 6);
-    cout << "Press Y to play and any letter to exit: ";
+    cout << "\033[0;34m" << "Press Y to play and any letter to exit: " << "\033[0m";
     cin >> Game;
 
     if (Game == 'Y' || Game == 'y')
     {
         system("cls");
         // Ask the user which game mode he is going to play
-        gatoxy(45, 5);
-        cout << "Choose a game mode (1. Multiplayer 2. VS CPU): ";
+        gatoxy(42, 5);
+        cout << "\033[0;32m" << "Choose a game mode ("  << "\033[0;34m" << "1. Multiplayer " << "\033[0;31m" << "2. VS CPU" << "\033[0;32m" << "): " << "\033[0m";
         cin >> Type_Game;
 
         // Enter 1 player mode
@@ -168,20 +166,20 @@ int main(){
             system("cls");
             // Ask the names of player´s
             gatoxy(45, 5);
-            cout << "Welcome Player 1 - What is your name? " << endl;
+            cout << "\033[0;34m" << "Welcome Player 1 - What is your name? " << "\033[0m" << endl;
             cin >> Player1;
 
             system("cls");
 
             gatoxy(45, 5);
-            cout << "Welcome Player 2 - What is your name? " << endl;
+            cout << "\033[0;31m" << "Welcome Player 2 - What is your name? " << "\033[0m"<< endl;
             cin >> Player2;
 
             do
             {
                 system("cls");
-                gatoxy(35, 2);
-                cout << "*************************  Player 1 [X] vs  Player 2 [O] ****************************";
+                gatoxy(25, 2);
+                cout << "\033[0;37m" << "************************* " << "\033[0;34m" << "Player 1 [X] " << "\033[0;37m" << "vs " << "\033[0;31m" << "Player 2 [O] " << "\033[0;37m" << "****************************" << "\033[0m";
                 cout << "\n";
                 make_board();
                 do
@@ -191,7 +189,8 @@ int main(){
                     if (Section_occupied == true)
                     {
                         system("cls");
-                        cout << "Try again \n";
+                        gatoxy(60, 2);
+                        cout << "\033[0;31m" << "Try" << "\033[0;37m" << "again \n" << "\033[0m";
                         make_board();
                     }
                 } while (Section_occupied == true);
@@ -203,8 +202,8 @@ int main(){
             } while (Game_over == false && Turn < 10);
 
             system("cls");
-            gatoxy(35, 2);
-            cout << "*************************  Player 1 [X] vs  Player 2 [O] ****************************";
+            gatoxy(25, 2);
+            cout << "\033[0;37m" << "************************* " << "\033[0;34m" << "Player 1 [X] " << "\033[0;37m" << "vs " << "\033[0;31m" << "Player 2 [O] " << "\033[0;37m" << "****************************" << "\033[0m";
             cout << "\n";
             make_board();
 
@@ -212,14 +211,14 @@ int main(){
             {
                 if ((Turn - 1) % 2 == 0)
                 {
-                    gatoxy(45, 9);
+                    gatoxy(60, 12);
                     cout << "\033[0;31m" << "Win the "
                          << Player2 << "\033[0m";
                     cout << "\n";
                 }
                 else
                 {
-                    gatoxy(45, 9);
+                    gatoxy(60, 12);
                     cout << "\033[0;34m" << "Win the "
                          << Player1 << "\033[0m";
                     cout << "\n";
@@ -227,7 +226,7 @@ int main(){
             }
             else
             {
-                gatoxy(45, 9);
+                gatoxy(55, 12);
                 cout << "\033[1;34m"
                      << " ***********************  Tie ************************"
                      << "\033[0m";
@@ -239,7 +238,7 @@ int main(){
 
             system("cls");
             gatoxy(45, 5);
-            cout << "Difficulty level: 1 - Easy 2 - Medium" << endl;
+            cout << "\033[0;32m" << "Difficulty level: " << "\033[0;37m" << "1 - Easy " << "\033[0;31m" << "2 - Medium" << "\033[0m" << endl;
             cin >> nivel;
 
             if (nivel == 1)
@@ -247,25 +246,28 @@ int main(){
                 system("cls");
 
                 gatoxy(45, 5);
-                cout << "Welcome Player 1 - What is your name? " << endl;
+                cout << "\033[0;34m" << "Welcome Player 1 - What is your name? " << "\033[0m" << endl;
                 cin >> Player3;
 
                 do
                 {
                     system("cls");
-
+                    gatoxy(25, 2);
+                    cout << "\033[0;37m" << "************************* " << "\033[0;34m" << "Player 1 [X] " << "\033[0;37m" << "vs " << "\033[0;31m" << "CPU [O] " << "\033[0;37m" << "****************************" << "\033[0m";
                     if ((Turn - 1) % 2 == 0)
                     {
                         do
                         {
                             make_board();
+                            cout << "\n";
                             Move = Choose_playima();
                             Section_occupied = Check_play(Move);
 
                             if (Section_occupied == true)
                             {
                                 system("cls");
-                                cout << "Try again \n";
+                                gatoxy(60, 2);
+                                cout << "\033[0;31m" << "Try" << "\033[0;37m" << "again \n" << "\033[0m";
                                 make_board();
                             }
 
@@ -284,28 +286,31 @@ int main(){
                 } while (Game_over == false and Turn < 10);
 
                 system("cls");
+                gatoxy(25, 2);
+                cout << "\033[0;37m" << "************************* " << "\033[0;34m" << "Player 1 [X] " << "\033[0;37m" << "vs " << "\033[0;31m" << "CPU [O] " << "\033[0;37m" << "****************************" << "\033[0m";
+                cout << "\n";
                 make_board();
 
                 if (Game_over == true)
                 {
                     if ((Turn - 1) % 2 == 0)
                     {
-                        gatoxy(45, 9);
-                        cout << "Win the "
-                             << "\033[0;31m" << Player_CPU << "\033[0m";
+                        gatoxy(60, 12);
+                        cout << "\033[0;31m" << "Win the "
+                             << Player_CPU << "\033[0m";
                         cout << "\n";
                     }
                     else
                     {
-                        gatoxy(45, 9);
-                        cout << "Win the player "
-                             << "\033[1;34m" << Player3 << "\033[0m";
+                        gatoxy(60, 12);
+                        cout << "\033[1;34m" << "Win the player "
+                             << Player3 << "\033[0m";
                         cout << "\n";
                     }
                 }
                 else
                 {
-                    gatoxy(45, 9);
+                    gatoxy(55, 12);
                     cout << "\033[1;34m"
                          << " ***********************  Tie ************************"
                          << "\033[0m";
@@ -315,13 +320,14 @@ int main(){
             {
                 system("cls");
                 gatoxy(45, 5);
-                cout << "Welcome Player 1 - What is your name? " << endl;
+                cout << "\033[0;34m" << "Welcome Player 1 - What is your name? " << "\033[0m" << endl;
                 cin >> Player3;
 
                 do
                 {
                     system("cls");
-
+                    gatoxy(25, 2);
+                    cout << "\033[0;37m" << "************************* " << "\033[0;34m" << "Player 1 [X] " << "\033[0;37m" << "vs " << "\033[0;31m" << "CPU [O] " << "\033[0;37m" << "****************************" << "\033[0m";
                     if ((Turn - 1) % 2 == 0)
                     {
                         do
@@ -333,7 +339,8 @@ int main(){
                             if (Section_occupied == true)
                             {
                                 system("cls");
-                                cout << "Try again \n";
+                                gatoxy(60, 2);
+                                cout << "\033[0;31m" << "Try" << "\033[0;37m" << "again \n" << "\033[0m";
                                 make_board();
                             }
 
@@ -352,28 +359,31 @@ int main(){
                 } while (Game_over == false and Turn < 10);
 
                 system("cls");
+                gatoxy(25, 2);
+                cout << "\033[0;37m" << "************************* " << "\033[0;34m" << "Player 1 [X] " << "\033[0;37m" << "vs " << "\033[0;31m" << "CPU [O] " << "\033[0;37m" << "****************************" << "\033[0m";
+                cout << "\n";
                 make_board();
 
                 if (Game_over == true)
                 {
                     if ((Turn - 1) % 2 == 0)
                     {
-                        gatoxy(45, 9);
-                        cout << "Win the "
-                             << "\033[0;31m" << Player_CPU << "\033[0m";
+                        gatoxy(60, 12);
+                        cout << "\033[0;31m" << "Win the "
+                             << Player_CPU << "\033[0m";
                         cout << "\n";
                     }
                     else
                     {
-                        gatoxy(45, 9);
-                        cout << "Win the player "
-                             << "\033[1;34m" << Player3 << "\033[0m";
+                        gatoxy(60, 12);
+                        cout << "\033[1;34m" << "Win the player "
+                             << Player3 << "\033[0m";
                         cout << "\n";
                     }
                 }
                 else
                 {
-                    gatoxy(45, 9);
+                    gatoxy(55, 12);
                     cout << "\033[1;34m"
                          << " ***********************  Tie ************************"
                          << "\033[0m";
@@ -394,7 +404,7 @@ int main(){
     {
         system("cls");
         gatoxy(45, 9);
-        cout << "The Game is Over" << endl;
+        cout << "\033[1;34m" << "The Game is Over" <<  "\033[0m"<< endl;
     }
 
     getchar();
@@ -405,10 +415,28 @@ void make_board(){
     int row = 0;
     int col = 0;
     
+    gatoxy(10, 5);
+    cout << "\033[0;32m" << "JUG" << "\033[0;37m" <<  "ADO" << "\033[0;31m" << "RES" << "\033[0m";
+    cout << "\n";
+
+    if(Type_Game == 1){
+        gatoxy(10, 6);
+        cout << "==> " << "\033[1;34m" << "X - " << "\033[0m" << Player1;
+        gatoxy(10, 7);
+        cout << "==> " << "\033[1;31m" << "O - " << "\033[0m" << Player2;
+    }else if(Type_Game == 2){
+        gatoxy(10, 6);
+        cout << "==> " << "\033[1;34m" << "X - " << "\033[0m" << Player3;
+        gatoxy(10, 7);
+        cout << "==> " << "\033[1;31m" << "O - " << "\033[0m" << "CPU";
+    }
+    
+    cout << "\n";
     for(int fila = 0; fila < 6; fila++){
+        gatoxy(60, 5+fila);
         for(int columna = 0; columna < 3; columna++){
             if(fila < 5 && fila % 2 == 1){
-                cout << "___";
+                cout << "\033[0;32m" << "___" << "\033[0m";
             }else{
                 if(fila < 5){
                     if(Cat[row][col] == 'X'){
@@ -426,7 +454,7 @@ void make_board(){
                 }
             }
             if(columna < 2){
-                cout << "|";
+                cout << "\033[0;31m" <<  "|" << "\033[0m";
             }
         }
         col = 0;
@@ -479,7 +507,8 @@ int Choose_play(){
     int Move;
     int contador = 0;
     string opciones = "123456789";
-    cout << "GAME OPTIONS" << endl;
+    cout << "\n";
+    cout << "\033[0;32m" << "GAME" << "\033[0;31m" << "OPTIONS" << "\033[0m" << endl;
 
     for(int fila = 0; fila < 3; fila++){
         for(int columna = 0; columna < 3; columna++){
@@ -491,13 +520,13 @@ int Choose_play(){
 
     do{
     if((Turn - 1) % 2 == 0){
-        cout << "The Turn is: " << Player1;
+        cout << "\033[0;34m" << "The Turn is: " << Player1 << "\033[0m";
         cout << "\n";
     }else{
-        cout << "The Turn is: " << Player2;
+        cout << "\033[0;31m" << "The Turn is: " << Player2 << "\033[0m";
         cout << "\n";
     }
-     cout << "Give me your move (from 1 to 9): ";
+     cout << "\033[0;32m" << "Give me " << "\033[0;37m" << "your move " << "\033[0;31m" << "(from 1 to 9): " << "\033[0m";
      cin >> Move;  
    }while(Move > 9 && Move < 0);
    return Move; 
@@ -508,7 +537,7 @@ int Choose_playima(){
     int Move;
     int contador = 0;
     string opciones = "123456789";
-    cout << "GAME OPTIONS" << endl;
+    cout << "\033[0;32m" << "GAME" << "\033[0;31m" << "OPTIONS" << "\033[0m" << endl;
 
     for(int fila = 0; fila < 3; fila++){
         for(int columna = 0; columna < 3; columna++){
@@ -520,13 +549,13 @@ int Choose_playima(){
 
     do{
     if((Turn - 1) % 2 == 0){
-        cout << "The Turn is: " << Player3;
+        cout << "\033[0;34m" << "The Turn is: " << Player3 << "\033[0m";
         cout << "\n";
     }else{
-        cout << "The Turn is: " << Player_CPU;
+        cout << "\033[0;31m" << "The Turn is: " << Player_CPU << "\033[0m";
         cout << "\n";
     }
-        cout << "Give me your move (from 1 to 9): ";
+        cout << "\033[0;32m" << "Give me " << "\033[0;37m" << "your move " << "\033[0;31m" << "(from 1 to 9): " << "\033[0m";
         cin >> Move;  
    }while(Move > 9 && Move < 0);
    return Move; 
