@@ -679,7 +679,7 @@ int Choose_play()
     string opciones = "123456789";
     cout << "\n";
     cout << "\033[0;32m"
-         << "GAME"
+         << "GAME "
          << "\033[0;31m"
          << "OPTIONS"
          << "\033[0m" << endl;
@@ -726,7 +726,7 @@ int Choose_playima()
     int contador = 0;
     string opciones = "123456789";
     cout << "\033[0;32m"
-         << "GAME"
+         << "GAME "
          << "\033[0;31m"
          << "OPTIONS"
          << "\033[0m" << endl;
