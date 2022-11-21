@@ -215,8 +215,8 @@ int main()
                         system("cls");
                         gatoxy(60, 2);
                         cout << "\033[0;31m"
-                             << "Try"
-                             << "\033[0;37m"
+                             << "Try "
+                             << "\033[0;32m"
                              << "again \n"
                              << "\033[0m";
                         make_board();
@@ -326,8 +326,8 @@ int main()
                                 system("cls");
                                 gatoxy(60, 2);
                                 cout << "\033[0;31m"
-                                     << "Try"
-                                     << "\033[0;37m"
+                                     << "Try "
+                                     << "\033[0;32m"
                                      << "again \n"
                                      << "\033[0m";
                                 make_board();
@@ -427,8 +427,8 @@ int main()
                                 system("cls");
                                 gatoxy(60, 2);
                                 cout << "\033[0;31m"
-                                     << "Try"
-                                     << "\033[0;37m"
+                                     << "Try "
+                                     << "\033[0;32m"
                                      << "again \n"
                                      << "\033[0m";
                                 make_board();
