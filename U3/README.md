@@ -88,6 +88,7 @@ gcc 01_JuegodelGato.cpp or 01_JuegodelGato.exe
 ~~~
 
 [Return to Index](#index)
+
 ## Flowchart 
 <img src="../imagenes/Diagrama.png" align="center">
 
@@ -133,9 +134,13 @@ If any player selects a move that is busy, he is sent a message to try another m
 Here are the winners
 
 <p align="center">
-<img src="../imagenes/win1.png" align="center"> <img src="../imagenes/win2.png" align="center">
+<img src="../imagenes/win1.png" align="center"> 
  </p>
 <br>
+<p align="center">
+<img src="../imagenes/win2.png" align="center"> 
+ </p>
+ <br>
 
 [Return to Index](#index)
 
