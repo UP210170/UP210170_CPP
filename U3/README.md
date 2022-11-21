@@ -174,7 +174,7 @@ Once inside the game, player 1 will select his first move. And the computer resp
 Here are the winners
 
 <p align="center">
-<img src="../imagenes/win3.png" align="center">
+<img src="../imagenes/winplayer.png" align="center">
  </p>
 <br>
 <p align="center">
